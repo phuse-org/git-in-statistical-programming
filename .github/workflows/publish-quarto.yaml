@@ -40,6 +40,9 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     needs: build
     environment:
       name: github-pages
