@@ -3,7 +3,7 @@ on:
     branches:
       - main
 
-name: Render and Publish
+name: Render and Publish site
 
 jobs:
   build:
