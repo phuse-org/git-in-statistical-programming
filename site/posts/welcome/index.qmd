@@ -1,12 +1,8 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "Example"
+author: "Kieran Martin"
 date: "2025-03-29"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
-![](thumbnail.jpg)
-
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+This is a filler post
