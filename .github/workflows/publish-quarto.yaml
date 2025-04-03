@@ -43,7 +43,7 @@ jobs:
           path: docs/
 
   deploy:
-    if: "github.ref != main"
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
       pages: write
