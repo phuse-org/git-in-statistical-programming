@@ -2,6 +2,10 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+        - main
+
 
 name: Render and Publish site
 
@@ -39,6 +43,7 @@ jobs:
           path: docs/
 
   deploy:
+    if: "github.ref != main"
     runs-on: ubuntu-latest
     permissions:
       pages: write
