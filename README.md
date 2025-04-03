@@ -19,7 +19,7 @@ If you are interested in joining, please go [here](https://advance.hub.phuse.glo
 - Regulators’ point of view
 
 3. Core education on Git for statistical programmers
-4. Soft proposal for an alternative QC process using Git features
+4. Soft proposal for an alternative QC process using Git features 
 
 # R use
 
