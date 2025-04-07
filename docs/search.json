@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Example",
+    "section": "",
+    "text": "This is a filler post"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Git in Statistical Programming",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nKieran Martin\n\n\n\n\n\n\n\n\n\n\n\n\nExample\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 29, 2025\n\n\nKieran Martin\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This blog contains posts from the PHUSE working group on The use of Git in Statisical Programming\n\nMeetings\nMeetings are happening bi-weekly every Tuesday\n\n\nGoal\n\nWhite paper about Git in pharma for statisticians : Guidelines\nPoster for Europe PHUSE 2025"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]
