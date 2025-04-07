@@ -1,9 +1,14 @@
 # The use of Git in Statisical Programming
 
-This repository is under construction. It is intended to support the working group for the use of Git in Statistical Programming. 
+🚧 This repository is under construction yet. 🚧
+It is intended to support the working group for the use of **Git in Statistical Programming**.
+
 If you are interested in joining, please go [here](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/90472449/The+Use+of+Git+in+Statistical+Programming) to find out more!
 
-# Objectives and Deliverables
+Take a look to the [website](https://phuse-org.github.io/git-in-statistical-programming/)(made by Quarto)
+
+
+# Objectives and Deliverables 
 
 1. Principles for using Git and example workflow(s) in context of the current QC process
 
