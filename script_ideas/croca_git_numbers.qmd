@@ -1,0 +1,41 @@
+---
+title: "croca_git_numbers"
+author: "croca"
+format: html
+editor: visual
+jupyter: python3
+---
+
+## Idea 1. Git in numbers
+
+Try to get some real world numbers around Git
+(So far I will focus in Github)
+
+### How is the adoption of Git around the world from the last 5 years till now?
+
+
+- We can see that the adoption increase across the world since 202 till 2025 
+
+info at https://innovationgraph.github.com/
+
+
+### How many "statisticians in healthcare" use Git.
+
+
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{python}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{python}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

@@ -30,6 +30,15 @@ Take a look to the [website](https://phuse-org.github.io/git-in-statistical-prog
 # R use
 
 This repository will be using quarto. To support this, there is an renv lock file which is currently bare bones. 
+(This means we can keep traceability of the R packages we are using within this repo)
+
+```R
+# reinstall environment packages
+renv::restore() # to install packages required
+
+# if you made changes to the environment (installing new packages) you can save them by:
+renv::snapshot()
+```
 
 # How to Contribute
 
