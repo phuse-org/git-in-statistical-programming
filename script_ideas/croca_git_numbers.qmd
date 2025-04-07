@@ -14,9 +14,11 @@ Try to get some real world numbers around Git
 ### How is the adoption of Git around the world from the last 5 years till now?
 
 
-- We can see that the adoption increase across the world since 202 till 2025 
+- We can see that the adoption increase across the world since 2020 till 2025 
 
-info at https://innovationgraph.github.com/
+
+![innovationgraph](img/adoptionByOrganizationsInWorld_last5years.png)
+
 
 
 ### How many "statisticians in healthcare" use Git.
