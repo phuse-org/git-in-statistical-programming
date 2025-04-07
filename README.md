@@ -32,13 +32,18 @@ Take a look to the [website](https://phuse-org.github.io/git-in-statistical-prog
 You can get involved in one of the following ways
 
 2.1 - If you wish to join the working group please [go here](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/90472449/The+Use+of+Git+in+Statistical+Programming) for the leads to reach out to them
+
 2.2 - You can get involved in discussion via the issues
+
 2.3 - You can propose a merge request via a fork if you see something that needs fixing
 
 
 ### 2.3. Using Git, to propose changes!
 
-#### 2.3.1 About cloning, branching and pushing
+
+<details>
+
+<summary>2.3.1 About cloning, branching and pushing</summary>
 
 Basic steps to get into this "Git world"
 
@@ -63,7 +68,14 @@ Basic steps to get into this "Git world"
 💡NOTE: If you like to use your Chat GPT to teach you more about these steps, use it. No fear to break anything!
 💡NOTE2: There is a wonderful tutorial in [Coursera] (https://www.coursera.org/learn/making-data-science-work-for-clinical-reporting#modules) to practise on your own how to do these steps. Very easy and well explained (and you get a certification 🎓 at the end!)
 
-#### 2.3.2 About R
+</details>
+
+
+
+<details>
+
+<summary>2.3.2 About R</summary>
+
 
 This repository will be using quarto. To support this repository, there is an **renv lock** file which is currently bare bones. 
 (This means we can keep traceability of the R packages we are using within this repo)
@@ -79,12 +91,21 @@ renv::snapshot()
 
 For the poster it would be nice to have some stats in a jupyter or Rmarkdown about issues around Git (or some charts explaining key points). 
 To start with, 
-0 - clone the repo in your laptop
-1 - create your own git branch:
+
+0 - after you have clones the repo in your laptop
+
+1 - you are in your branch
+
 ```sh
 # in terminal, within your project directory
+#create your own git branch:
 git checkout -b yourname_dev
+# or switch to your branch
+git switch yourname_dev
 ```
+
 2- A folder called **"script_ideas"** will be the SANDBOX with your scripts/ collaborative scripts/pictures to get some charts/numbers around this topic (for the paper or poster, or to discuss in our meetings). 
+
+</details>
 
 
