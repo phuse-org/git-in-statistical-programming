@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: ../docs/white-paper
+book:
+  title: "Git in Statistical Programming"
+  author: "Kieran Martin"
+  date: "5/22/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

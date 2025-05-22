@@ -30,11 +30,17 @@ jobs:
           # uncomment below and fill to pin a version
           # version: SPECIFIC-QUARTO-VERSION-HERE
           
-      - name: Render Quarto Project
+      - name: Render Quarto Project 1
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
           path: site
+      
+      - name: Render Quarto Project 2
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html # If set, it will be equivalent to `quarto render --to html`
+          path: white-paper    
       
       - name: Upload static files as artifact
         id: deployment
