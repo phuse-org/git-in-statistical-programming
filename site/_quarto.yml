@@ -6,9 +6,14 @@ website:
   title: "Git in Statistical Programming"
   navbar:
     right:
-      - about.qmd
+      - href: index.qmd
+        text: Home
+      - posts.qmd
+      - href: white-paper/index.html
+        text: White Paper
       - icon: github
-        href: https://github.com/
+        href: https://github.com/phuse-org/git-in-statistical-programming
+        
 
 format:
   html:

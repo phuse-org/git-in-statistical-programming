@@ -1,14 +1,27 @@
 ---
 title: "Git in Statistical Programming"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+about:
+  image: phuselogo.png
+  template: solana
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/phuse-org/git-in-statistical-programming
+      
 ---
 
+This blog contains posts from the PHUSE working group on The use of Git in Statistical Programming
 
+# Meetings
+
+Meetings are happening bi-weekly every Friday
+
+# Goal
+
+- White paper about Git in pharma for statisticians : Guidelines
+- Poster for Europe PHUSE 2025
+
+# Content
+
+- [White Paper draft](white-paper/index.html)
+- [Blog posts](posts.qmd)
