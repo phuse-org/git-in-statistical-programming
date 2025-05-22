@@ -1,0 +1,5 @@
+# Change Management and Git
+
+This chapter will discuss challenges in adoption of Git as well as how these might be addressed.
+
+

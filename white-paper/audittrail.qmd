@@ -1,0 +1,5 @@
+# Audit trail requirements and Git
+
+This chapter will discuss audit trail requirements for QC, and how they might be met in Git. 
+
+

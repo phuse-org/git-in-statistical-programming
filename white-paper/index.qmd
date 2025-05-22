@@ -1,4 +1,4 @@
-# Preface {.unnumbered}
+# Introduction
 
 This is a draft of the white paper for the phuse working group Git in Statistical Programming
 

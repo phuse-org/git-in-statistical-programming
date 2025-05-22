@@ -1,0 +1,4 @@
+# Recommended ways of using Git
+
+This chapter will discuss the working groups current recommendations for using Git. These are not intended to be authoritative, or cover every scenario, but instead look at commonalities between current usage of Git, and how new companies might adopt it. 
+

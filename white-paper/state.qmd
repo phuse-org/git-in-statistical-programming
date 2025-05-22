@@ -1,0 +1,3 @@
+# The state of Git usage across the industry
+
+This section will describe the current state of Git in the industry
