@@ -1,0 +1,5 @@
+# QC Process and Git
+
+This chapter will discuss the QC process and how teams might interact with that using Git.
+
+

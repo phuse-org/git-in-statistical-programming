@@ -1,0 +1,4 @@
+# Tools for using Git
+
+This chapter will discuss the tools that can be used in Git. This is intended to be a reference rather than recommendations
+
