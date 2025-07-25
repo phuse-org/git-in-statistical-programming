@@ -1,0 +1,76 @@
+---
+title: "GitHub Desktop"
+subtitle: "Streamline git process without code"
+author: "alex"
+date: "2025-01-29"
+categories: [tools, qol, gui]
+image: "thumb.png"
+# grid:
+#   sidebar-width: 050px
+#   body-width: 1200px
+#   margin-width: 250px
+#   gutter-width: 1.5rem
+toc: TRUE
+toc-title: "Table of contents"
+toc-depth: 5
+---
+
+This blog post covers the most common and basic git operations that be done using GitHub Desktop. It can be used with other Git hosting services such, but the focus will be on GitHub in this post.
+
+## What is GitHub Desktop?
+
+[**Github Desktop**](https://desktop.github.com/) is a **free and open-source** software that provides a **graphical user interface** to use git instead of using the prompts. It means you don't need to learn how to use the command lines to have a proper usage of Git.
+
+### Features
+
+It allows you to:
+
+-   Clone a repository to your local environment
+
+-   Rebase your current branch
+
+-   Write commit messages and push branches to your distant repository
+
+-   Open a pull request
+
+And a lot more.
+
+### Installation and setup
+
+#### Download
+
+GitHub Desktop is available for Windows and Mac and can be download from [this link](https://desktop.github.com/download/).
+
+::: callout-tip
+##### Linux user?
+
+GitHub Desktop is not officially available on Linux. Still, a [fork](https://github.com/shiftkey/desktop) version can be installed.
+:::
+
+#### Associate GitHub Account
+
+By opening the `File > Options...` menu, you will be able to connect your GitHub account directly.
+
+![](account.png)
+
+## Clone a repository
+
+A repository hosted on GitHub can be cloned in two clicks. From the repository page, click on *Code* and then *Open with GitHub Desktop*.
+
+![](clone.png)
+
+## Start coding
+
+The top screen menu allows you to:
+
+-   Select the repository you want to work on
+
+-   Select the branch you want to work on
+
+-   Retrieve the latest changes from the remote repository without applying them to your working directory using *Fetch origin*
+
+When your branch is selected you can run the coding software of your choice and that coding.
+
+![](open-software.png)
+
+## Commit changes, push branches and pull request
