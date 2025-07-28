@@ -35,6 +35,12 @@ It allows you to:
 
 And a lot more.
 
+::: callout-note
+##### A lot of features
+
+This blog post focuses on the actions described above and do not cover specificities such as code review.
+:::
+
 ### Installation and setup
 
 #### Download
@@ -74,3 +80,25 @@ When your branch is selected you can run the coding software of your choice and 
 ![](open-software.png)
 
 ## Commit changes, push branches and pull request
+
+Once you're ready with an addition or modification of a program, the update history is automatically displayed in GitHub Desktop.
+
+![](update-history.png)
+
+In the bottom left corner of the GitHub Desktop window, you can write a clear can concise **commit message** that will describe your modifications and status. The "Description" field can be used to add more information.
+
+![](commit.png)
+
+Once the commit is done, you can **push** your branch from your local folder to the remote repository.
+
+![](push.png)
+
+Then the remote repository will be updated.
+
+![](push-remote.png)
+
+Finally, when you are ready to open a **pull request** directly from GitHub Desktop, which will open the GitHub webpage for the pull request.
+
+![](pull-request.png)
+
+![](pull-request-remote.png)
