@@ -97,8 +97,13 @@ Then the remote repository will be updated.
 
 ![](push-remote.png)
 
-Finally, when you are ready to open a **pull request** directly from GitHub Desktop, which will open the GitHub webpage for the pull request.
+Finally, when you are ready to open a **pull request** directly from GitHub Desktop.
 
 ![](pull-request.png)
 
+The GitHub webpage will open in the pull request creation webpage.
+
 ![](pull-request-remote.png)
+
+The code review can be done directly form GitHub or from GitHub Desktop.
+
