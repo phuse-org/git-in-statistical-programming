@@ -79,6 +79,12 @@ When your branch is selected you can run the coding software of your choice and 
 
 ![](open-software.png)
 
+::: callout-tip
+## Supported editors
+
+The list of supported editors is available [here](https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor-in-github-desktop?platform=windows "https://docs.github.com").
+:::
+
 ## Commit changes, push branches and pull request
 
 Once you're ready with an addition or modification of a program, the update history is automatically displayed in GitHub Desktop.
@@ -106,4 +112,3 @@ The GitHub webpage will open in the pull request creation webpage.
 ![](pull-request-remote.png)
 
 The code review can be done directly form GitHub or from GitHub Desktop.
-
