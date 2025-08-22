@@ -1,0 +1,65 @@
+---
+title: "How to write a good commit message"
+subtitle: "Keep easy trackchanges history for your project"
+author: "alex"
+date: "2025-08-22"
+categories: [git, version-control, revision-history]
+# image: "thumb.png"
+toc: TRUE
+toc-title: "Table of contents"
+toc-depth: 5
+---
+
+This blog post covers the topic of Git commits, how it is working, and how to use them in an efficient way.
+
+## What is a commit?
+
+A commit is a snapshot of a Git repository at a specific time that will show all the changes made to the content of the repository.
+
+A commit will capture the followings:
+
+-   The author's name or ID of the commit
+
+-   The list of modified files and the comparison with the files (if any) of the source branch
+
+-   The date/time of the commit
+
+-   A message that will clearly describe (and possibly detail) the reason of the files' update.
+
+Each commit is associated to a specific identifier code.
+
+## Benefits of commits
+
+Despite the fact that making commit is mandatory when working on a Git repository to update files, there are a lot of benefits in using Git commits.
+
+### Keep clear history of changes
+
+Commonly, each program has a header that contains a *"Revision history"* part. Git commits can easily replace this part because it contains the main information of a classic revision history message (author, date and reason for change), associated to the full files comparisons, such as a before/after view.
+
+All the changes of a single commit are stored in the same place. It means if you work on a single task that request to modify several programs, you can summarize the changes within one message. You do not need to open each separated files one by one to look at what was done, when, and by who.
+
+::: callout-tip
+#### Consolidate all commits of a branch
+
+Even with several commits, you can have a clear view of all the changes when merging to the source branch.
+:::
+
+### Backup save
+
+As Git is a version control software, and each commit is a snapshot done at a current state, it is easy to go back to a previous version of a branch using commit IDs.
+
+::: callout-caution
+#### Under construction
+
+Not finished.
+:::
+
+## When to commit?
+
+### Commit one file at a time or several?
+
+::: callout-caution
+### Under construction
+
+Under construction
+:::
