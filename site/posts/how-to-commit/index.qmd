@@ -49,17 +49,28 @@ Even with several commits, you can have a clear view of all the changes when mer
 As Git is a version control software, and each commit is a snapshot done at a current state, it is easy to go back to a previous version of a branch using commit IDs.
 
 ::: callout-caution
-#### Under construction
+#### Need feedbacks - hash
 
-Not finished.
+I think talking about `git checkout` and `git reset` here is not useful. Maybe another blog post could be interesting. What do you think?
 :::
 
 ## When to commit?
 
 ### Commit one file at a time or several?
 
-::: callout-caution
-### Under construction
+The choice depends on the context and what you want to show.
 
-Under construction
+If the task or feature to add is isolated to a single file, one commit message done at the end of the update can be easily readable and integrated to the history trackchange.
+
+In the case of a debugging task over several files, one commit message per file could also be useful, or when there is a need to track the evolution of a specific dataset.
+
+When a change on a program affects the behavior of other programs that also needs to be updated, one commit for all the modifications can be done. Also when you decide to modify both a program and the associated documentation.
+
+::: callout-caution
+#### Need feedbacks.
+
+Need feedbacks.
 :::
+
+## How to write a good commit message
+
