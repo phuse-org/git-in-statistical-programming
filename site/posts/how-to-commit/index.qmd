@@ -117,11 +117,17 @@ It should be informative but also concise.
 Here is an example of a commit message including a title and the body (detail):
 
 ::: note
-`Add! ANLzzFL in ADxx, ADyy, and ADzz for efficacy`
+**`Add! ANLzzFL in ADxx, ADyy, and ADzz for efficacy`**
 
-`Implements ANLzzFL variable in ADxx, ADyy, and ADzz to identify records for inclusion in the new efficacy analysis introduced in SAP release 3.0 (part 4.5.1, [title]).` 
+`Implements ANLzzFL variable in ADxx, ADyy, and ADzz to identify records for inclusion in the new efficacy analysis introduced in SAP release 3.0 (part 4.5.1, [title]).`
 
-`This flag marks the specific records relevant to the new analysis.` 
+`This flag marks the specific records relevant to the new analysis.`
 
 `Impact: downstream efficacy tables and participant selection for regulatory outputs.`
+:::
+
+::: callout-tip
+#### Conventional commits
+
+[conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0/) gives tips and guidance for writing commit messages.
 :::
