@@ -30,8 +30,6 @@ When working with code - especially languages like SAS, R, or Python - we often 
 
 These files can clutter the repository, making it harder to see actual code changes. They also unnecessarily increase repository size, which can slow down operations.
 
-![Cluttered vs Clean Repository](cluttered-vs-clean.png)
-
 .gitignore solves this by automatically excluding these unwanted files from version control without someone having to manually specify each time.
 
 ## How It Works
@@ -45,14 +43,7 @@ The .gitignore file uses simple patterns to match filenames:
 - `!*.sas` - **do not ignore** all files ending with .sas
 - `# This is a comment` - Anything after a # is a comment and is ignored
 
-```{mermaid}
-flowchart TD
-    A[File in Project] --> B{.gitignore Pattern Match?}
-    B -->|Yes| C[File Ignored]
-    B -->|No| D[File Tracked by Git]
-    C --> E[Clean Repository]
-    D --> F[Repository with Unwanted Files]
-```
+For complete syntax please refer to the [official documentation](https://git-scm.com/docs/gitignore).
 
 These rules are applied whenever Git checks for changes, so you only see relevant modifications.
 
