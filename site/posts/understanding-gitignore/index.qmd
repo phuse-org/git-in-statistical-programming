@@ -47,6 +47,52 @@ For complete syntax please refer to the [official documentation](https://git-scm
 
 These rules are applied whenever Git checks for changes, so you only see relevant modifications.
 
+## About Multiple .gitignore Files
+
+It's worth noting that it is possible to have multiple .gitignore files throughout the project. .gitignore files are not limited to just one in the root directory. When we place a .gitignore file in a subfolder, Git applies those specific ignore patterns only within that folder.
+
+This is particularly useful for tools like R's renv package or Python's virtual environments, which might have their own temporary files and configurations that should be ignored at different levels of project structure.
+
+```{mermaid}
+---
+config:
+  layout: fixed
+---
+flowchart LR
+    A[🏠 my-r-project/] --> B[📄 .gitignore<br/>ROOT LEVEL]
+    A --> C[📁 R/]
+    A --> D[📁 data/]
+    A --> G[📁 vignettes/]
+    A --> J[📁 docs/]
+    A --> N[📄 README.md]
+
+    B --> B1[".Rproj.user/<br/>*.Rproj<br/>.Rhistory<br/>.RData<br/>.Ruserdata<br/>docs/<br/>Meta/<br/>doc/<br/>*.tar.gz"]
+
+    C --> C1[📄 utils.R]
+    C --> C2[📄 main_functions.R]
+    C --> C3[📄 plot_functions.R]
+
+    D --> D1[📄 .gitignore<br/>DATA SPECIFIC]
+    D --> D2[📄 raw_data.csv]
+    D --> D3[📄 processed_data.rda]
+    D1 --> D1A["*.csv<br/>*.xlsx<br/>raw_*<br/>temp_*<br/>backup_*"]
+
+    G --> G1[📄 introduction.Rmd]
+    G --> G2[📄 .gitignore<br/>VIGNETTE SPECIFIC]
+    G2 --> G2A["*.html<br/>*.pdf<br/>*_cache/<br/>*_files/<br/>figure-html/"]
+
+
+    J --> J1[📄 .gitignore<br/>DOCS SPECIFIC]
+    J --> J2[📁 _site/]
+    J --> J3[📄 pkgdown.yml]
+    J1 --> J1A["_site/<br/>*.html<br/>search.json<br/>sitemap.xml"]
+
+    style A fill:#e1f5fe
+
+    classDef gitignoreFile fill:#ff9800,stroke:#e65100,stroke-width:2px,color:#fff
+    class B,D1,F3,G2,H2B,H3B,I2,J1,K2 gitignoreFile
+```
+
 ## Different Ways to Use gitignore
 
 ### Basic Setup
@@ -106,6 +152,17 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 
 Then add common patterns in .gitignore_global file located at ~/ (home directory) that should be ignored across all projects.
+
+## Important Limitation
+
+While .gitignore is powerful, it has an important limitation: it won't ignore files that are already included (staged or committed) in Git. If a file is added to the staging area with `git add`, Git will continue tracking it even if it matches patterns in existing .gitignore file.
+
+If such a file is already included and needs to be excluded, this need to explicitly remove it from tracking using:
+```
+git rm --cached filename
+```
+
+This removes the file from version control but leaves it on the local filesystem.
 
 ## Best Practices
 
