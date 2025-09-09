@@ -17,7 +17,7 @@ This documentation aims to provide a comprehensive understanding of Git's core f
 
 This documentation is made for an audience with a basic understanding of git.
 
-Git can be used both with through Terminal command line and `RStudio` programming interface or other tools (`Github Desktop`).
+Git can be used both through Terminal command line and `RStudio` programming interface or other tools (`Github Desktop`).
 
 Please be aware that certain operations are not fully supported or are only partially covered by the RStudio interface. In these cases, utilizing the command line may be the only viable approach.
 
