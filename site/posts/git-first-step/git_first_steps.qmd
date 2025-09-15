@@ -31,6 +31,12 @@ As our understanding and methodologies evolve, specific guidance tailored to cli
 
 If you never used `Git` or `GitHub` before, start by creating a GitHub account and configuring Git.
 
+::: callout-important
+GitHub is a platform for git-managed projects that allows developers to store, manage, and track changes to their code to nurture collaboration.
+
+Other alternative such as Gitlab and Bitbucket exist.
+:::
+
 **To create a github account:**
 
 You can create a github account [Here](https://github.com/)
