@@ -1,0 +1,37 @@
+---
+title: "Industry Talk Review"
+author: "Rita Pecuch"
+date: "2025-03-29"
+categories: [review, git, pharmaceuticals]
+# format:
+#   html:
+#     toc: true
+#     code-fold: true
+bibliography: references.bib
+# TODO: add the csl file and uncomment
+# csl: apa.csl  # for APA style citation
+toc: TRUE
+toc-title: "Table of Contents"
+toc-depth: 5
+---
+
+# Introduction
+
+Test reference @esteva2019guide
+
+# Search Strategy
+
+# Major Themes
+
+## Theme 1
+
+## Theme 2
+
+# Key Findings
+
+# Conclusion
+
+# References
+
+```{bibliography}
+```
