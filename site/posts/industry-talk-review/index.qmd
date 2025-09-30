@@ -7,9 +7,6 @@ categories: [review, git, pharmaceuticals]
 #   html:
 #     toc: true
 #     code-fold: true
-bibliography: references.bib
-# TODO: add the csl file and uncomment
-# csl: apa.csl  # for APA style citation
 toc: TRUE
 toc-title: "Table of Contents"
 toc-depth: 5
@@ -17,9 +14,13 @@ toc-depth: 5
 
 # Introduction
 
-Test reference @esteva2019guide
+The usage of Git in clinical programming within the pharmaceutical industry has been steadily increasing over the last several years. Beyond the discussions of our PHUSE working group, several talks at recent industry events have showcased how various companies are leveraging this technology.
 
 # Search Strategy
+
+The search for materials spanned a few major conferences over the past few years. The PHUSE archive was the primary resource utilized, as heavy representation from pharmaceutical companies is customary for PHUSE events. In addition, talks from the Posit Conference were evaluated, as this is a major open-source technology event which typically includes at least a small degree of representation from the pharmaceutical industry. 
+
+R/Pharma
 
 # Major Themes
 
@@ -33,5 +34,4 @@ Test reference @esteva2019guide
 
 # References
 
-```{bibliography}
-```
+
