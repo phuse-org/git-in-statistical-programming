@@ -3,10 +3,6 @@ title: "Industry Talk Review"
 author: "Rita Pecuch"
 date: "2025-03-29"
 categories: [review, git, pharmaceuticals]
-# format:
-#   html:
-#     toc: true
-#     code-fold: true
 toc: TRUE
 toc-title: "Table of Contents"
 toc-depth: 5
@@ -18,9 +14,9 @@ The usage of Git in clinical programming within the pharmaceutical industry has 
 
 # Search Strategy
 
-The search for materials spanned a few major conferences over the past few years. The PHUSE archive was the primary resource utilized, as heavy representation from pharmaceutical companies is customary for PHUSE events. In addition, talks from the Posit Conference were evaluated, as this is a major open-source technology event which typically includes at least a small degree of representation from the pharmaceutical industry. 
+The search for materials spanned the 2025 PHUSE archive, as heavy representation from pharmaceutical companies is customary for PHUSE events. 
 
-R/Pharma
+The aim is not only to summarize how companies are leveraging Git, but to evaluate applications of open-source technology and propose how Git can be useful.
 
 # Major Themes
 
@@ -34,4 +30,30 @@ R/Pharma
 
 # References
 
+In paper reference template - white papers:
+(Furst & DeMillo, 2006)
 
+Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP compliant and validated manner for clinical trials use [White paper OS3464]. Sycamore Informatics India Private Limited. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS10.pdf
+
+Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biostatistics Organizations [White paper OS02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS02.pdf
+
+Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
+
+Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
+
+Kim, J. (2025). The changes in the job of statistical programmer in the 
+pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET07.pdf
+
+Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
+
+Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
+
+Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
+
+Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
+
+Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
+
+Veríssimo, A., Viyash, V. (2025). Accelerating Shiny Application Development and Validation with Rhino [White paper OS15]. Appsilon. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS15.pdf
+
+Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
