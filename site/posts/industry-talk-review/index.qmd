@@ -20,18 +20,48 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 
 # Major Themes
 
-## Theme 1
+## Increasing Usage of Open-Source Programming
 
-## Theme 2
+(Andhale & Sood, 2025)
+- R is powerful language for statistical modeling and hypothesis testing within the industry
+- Clean data, apply stats models, and implement ML algorithms all within single platform
+- Shiny allows visualizing large datasets that are common in this industry, and get actionable insights
+- HTML, CSS, and JS knowledge not required --> so lowered barrier for getting more people into open-source programming
+- Interactive elements for deeper data exploration
+- Integrate data from several sources, across studies, leverage historical data
+- More flexibility to meet diverse needs of stakeholders
+- Scalability important for exponentially increasing amounts of data due to multicenter international trials
+
+## Rise of Agile Methologies
+
+(Andhale & Sood, 2025)
+- becoming more common
+- Real-time communication and iterative progress in workflows
+
+## Need for Version Control
+
+(Andhale & Sood, 2025)
+- Important to support agile and collaborative development
+- Particulary useful for complex projects
+
+
+## GxP Compliance
+
+(Andhale & Sood, 2025):
+- All open source packages used for regulatory submissions must be validated (proven to meet regulatory standards), documented, and controlled in SCE
+- Must be traceability of all code changes
+- Allows reproducibility of all versions of code
+
+## Collaborative Learning Communities
+
+(Andhale & Sood, 2025)
+- For R programming
 
 # Key Findings
 
 # Conclusion
 
 # References
-
-In paper reference template - white papers:
-(Furst & DeMillo, 2006)
 
 Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP compliant and validated manner for clinical trials use [White paper OS3464]. Sycamore Informatics India Private Limited. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS10.pdf
 
