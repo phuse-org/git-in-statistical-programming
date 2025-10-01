@@ -1,9 +1,0 @@
----
-title: "Post With Code"
-author: "Kieran Martin"
-date: "2025-04-01"
-categories: [news, code, analysis]
-image: "image.jpg"
----
-
-This is a post with executable code.
