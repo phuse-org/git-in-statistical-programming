@@ -1,8 +1,0 @@
----
-title: "Example"
-author: "Kieran Martin"
-date: "2025-03-29"
-categories: [news]
----
-
-This is a filler post
