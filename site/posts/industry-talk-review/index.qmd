@@ -32,6 +32,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - More flexibility to meet diverse needs of stakeholders
 - Scalability important for exponentially increasing amounts of data due to multicenter international trials
 
+(Arancibia, 2025)
+- R is primary open-source language for biostatistics (for many organizations)
+
 ## Rise of Agile Methologies
 
 (Andhale & Sood, 2025)
@@ -44,6 +47,14 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - Important to support agile and collaborative development
 - Particulary useful for complex projects
 
+(Arancibia, 2025)
+- Need data sources for metrics to report to senior leadership (topics such as how much open-source is being used)
+• R Code size out of total code (R and SAS) 
+• Total Repos with any R usage 
+• Repos where R code size (out of R and SAS) is greater than Target Precent 
+• Growth of R: Rate of change of R code in a repo and organization 
+- Lots of useful info can be pulled with GitHub API to automate metrics reporting. And several languages including R have packages that interface with the GitHub API and simplify the syntax of API call execution
+
 
 ## GxP Compliance
 
@@ -52,21 +63,26 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - Must be traceability of all code changes
 - Allows reproducibility of all versions of code
 
-## Collaborative Learning Communities
+## Training and Support
 
 (Andhale & Sood, 2025)
-- For R programming
+- Collaborative learning communities r R programming
+
+(Arancibia, 2025)
+- Pulling specific info via GitHub API to assess where repos need improvements
 
 # Key Findings
 
 # Conclusion
 
 # References
+Posit. (2024, November). GSK's R Journey: From Pilot Projects to Enterprise Adoption | Hosted by Posit. Retrieved from https://www.youtube.com/watch?v=xDrt6txplek
 
 Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP compliant and validated manner for clinical trials use [White paper OS3464]. Sycamore Informatics India Private Limited. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS10.pdf
 
 Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biostatistics Organizations [White paper OS02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS02.pdf
 
+NEXT:
 Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
 
 Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
