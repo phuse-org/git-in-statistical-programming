@@ -136,7 +136,7 @@ Here is an example of a commit message including a title and the body (detail):
 
 ::: callout-tip
 #### Using AI to improve commits
-Tools such as GitHub Copilot can help to write a good commit message by reviewing a branch and the updated done.
+Tools such as GitHub Copilot can help to write a good commit message by reviewing a branch and what updates were done.
 :::
 
 ## Examples of bad commit messages
