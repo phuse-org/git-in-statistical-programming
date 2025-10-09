@@ -41,6 +41,11 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - becoming more common
 - Real-time communication and iterative progress in workflows
 
+(Ching, 2025)
+- dynamic and iterative approach
+- needs tailored approach for leading and managing change
+- sprints to allow continuous improvement
+
 ## Need for Version Control
 
 (Andhale & Sood, 2025)
@@ -71,6 +76,14 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 (Arancibia, 2025)
 - Pulling specific info via GitHub API to assess where repos need improvements
 
+(Ching, 2025):
+- "Although GitHub has many selling points, many of its concepts are new and foreign to most of the statisticians and programmers going through this transition. Taking into account the effort and time required to upskill an entire department in a very new way of working, the transition to GitHub proved to be more daunting than we realized, as it was not just about learning how to use GitHub, it was also about learning to adapt to process changes to leverage the full capabilities of GitHub such as branching, tags, and the level of granularity in its version control"
+- "creating a culture that embraces change is essential. This can be achieved through leadership support, clear 
+communication of the benefits of change, and recognition of employees' efforts during the transition"
+- "it’s important to celebrate and appreciate those who are leading, implementing, and embracing change to 
+maintain morale and motivation. This means celebrating small wins and milestones achieved during the project"
+- technical support important --> in this case helpful to have SMEs embedded in teams to help out
+
 # Key Findings
 
 # Conclusion
@@ -82,9 +95,9 @@ Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP complia
 
 Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biostatistics Organizations [White paper OS02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS02.pdf
 
-NEXT:
 Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
 
+LEFT OFF HERE:
 Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
 
 Kim, J. (2025). The changes in the job of statistical programmer in the 
