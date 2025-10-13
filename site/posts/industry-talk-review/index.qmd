@@ -35,6 +35,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 (Arancibia, 2025)
 - R is primary open-source language for biostatistics (for many organizations)
 
+(Hume, 2025)
+- CDISC using open-source tools and test frameworks in the Enable and Automate pillar of 360i strategy
+
 ## Rise of Agile Methologies
 
 (Andhale & Sood, 2025)
@@ -59,6 +62,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 • Repos where R code size (out of R and SAS) is greater than Target Precent 
 • Growth of R: Rate of change of R code in a repo and organization 
 - Lots of useful info can be pulled with GitHub API to automate metrics reporting. And several languages including R have packages that interface with the GitHub API and simplify the syntax of API call execution
+
+(Hume, 2025)
+- "GitHub provides the means to collaborate on software and standards development activities as well as providing mechanisms for discussions, documentation, and planning activities."
 
 
 ## GxP Compliance
@@ -97,9 +103,9 @@ Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biost
 
 Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
 
-LEFT OFF HERE:
 Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
 
+LEFT OFF HERE:
 Kim, J. (2025). The changes in the job of statistical programmer in the 
 pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET07.pdf
 
