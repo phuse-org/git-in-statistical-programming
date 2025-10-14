@@ -38,6 +38,10 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 (Hume, 2025)
 - CDISC using open-source tools and test frameworks in the Enable and Automate pillar of 360i strategy
 
+(Kim, 2025):
+- rise of open-source making distinction between statistical programmers and traditional CS programmers less clear, as distcintion used to be based on use of proprietary software by stat programmers
+- open-source encourages collaboration
+
 ## Rise of Agile Methologies
 
 (Andhale & Sood, 2025)
@@ -74,6 +78,15 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - Must be traceability of all code changes
 - Allows reproducibility of all versions of code
 
+(Kim, 2025):
+- bound to work with the CFR21 Part 11 rule
+- programming must be done in controlled environment
+- do not violate data privacy
+- can share certain metadata information with RAs to simplify reproducibility of programming environments
+- Testing and validation should not be used interchangeably. Testing can stay with computer science programmers (CSP) and use open source tools such as GitHub Actions, validation of data outputs should stay with stat programmers (DSPs) and follow SOPs
+- Set of standard checks on code can be helpful to improve overall program quality
+- CSPs more concerned with if logic produced expected results given particular test data, and DSPs more concerned with comparisons of data outputs
+
 ## Training and Support
 
 (Andhale & Sood, 2025)
@@ -105,10 +118,10 @@ Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in t
 
 Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
 
-LEFT OFF HERE:
 Kim, J. (2025). The changes in the job of statistical programmer in the 
 pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET07.pdf
 
+LEFT OFF HERE:
 Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
 
 Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
