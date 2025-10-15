@@ -42,6 +42,11 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - rise of open-source making distinction between statistical programmers and traditional CS programmers less clear, as distcintion used to be based on use of proprietary software by stat programmers
 - open-source encourages collaboration
 
+(Liao, 2025):
+- use or propietary software is expensive and restricts freedom of operation
+- some visualization tools have steep learning curves for both developers and viewers
+- transparency of code is an attractive feature --> so let's also have transparency in all code changes
+
 ## Rise of Agile Methologies
 
 (Andhale & Sood, 2025)
@@ -69,6 +74,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 
 (Hume, 2025)
 - "GitHub provides the means to collaborate on software and standards development activities as well as providing mechanisms for discussions, documentation, and planning activities."
+
+(Liao, 2025):
+- Git is integrated with several platforms that can be used as SCEs, such as Posit Workbench/Connect
 
 
 ## GxP Compliance
@@ -103,6 +111,9 @@ communication of the benefits of change, and recognition of employees' efforts d
 maintain morale and motivation. This means celebrating small wins and milestones achieved during the project"
 - technical support important --> in this case helpful to have SMEs embedded in teams to help out
 
+(Liao, 2025):
+- embrace the openness of knowledge sharing in the open-source community
+
 # Key Findings
 
 # Conclusion
@@ -121,9 +132,9 @@ Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automat
 Kim, J. (2025). The changes in the job of statistical programmer in the 
 pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET07.pdf
 
-LEFT OFF HERE:
 Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
 
+LEFT OFF HERE:
 Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
 
 Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
