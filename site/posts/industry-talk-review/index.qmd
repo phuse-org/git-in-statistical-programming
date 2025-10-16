@@ -114,7 +114,27 @@ maintain morale and motivation. This means celebrating small wins and milestones
 (Liao, 2025):
 - embrace the openness of knowledge sharing in the open-source community
 
-# Key Findings
+## Tool Comparisons
+
+(Opalka, 2025):
+- GitHub:
+  - Owned by Microsoft
+  - More users across community
+  - Unclear if you can suggest code edits which can then be accepted/rejected
+  - Centered around main branch
+  - Cheaper
+- GitLab
+  - Standalone company
+  - Less users across community
+  - Can suggest code edits which can then be accepted/rejected
+  - Encourages use of pre-production branch before production branch
+  - More expensive
+-  "From an enterprise perspective…
+ Github is much cheaper than Gitlab - the enterprise plans are $21 per user/month and $99 per 
+user/month respectively, however Gitlab has security elements already included and with GitHub 
+these are about $50/month extra (Prices as of 2024). Which repository is for you ultimately 
+depends on whether you want to prioritise stability, safety and an all-in-one solution (GitLab) 
+or speed, cheaper costs and a bigger community (GitHub)."
 
 # Conclusion
 
@@ -134,9 +154,9 @@ pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-cent
 
 Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
 
-LEFT OFF HERE:
 Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
 
+LEFT OFF HERE:
 Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
 
 Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
