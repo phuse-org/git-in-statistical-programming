@@ -47,6 +47,12 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - some visualization tools have steep learning curves for both developers and viewers
 - transparency of code is an attractive feature --> so let's also have transparency in all code changes
 
+(Patel, 2025):
+- Customize analyses to meet specific needs in clinical trials
+- Easy re-running and updates of results when using scripting
+- R stands out for data wrangling/manipulation and specialized statistical packages
+- Python stands out for automation and machine learning/AI
+
 ## Rise of Agile Methologies
 
 (Andhale & Sood, 2025)
@@ -94,6 +100,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - Testing and validation should not be used interchangeably. Testing can stay with computer science programmers (CSP) and use open source tools such as GitHub Actions, validation of data outputs should stay with stat programmers (DSPs) and follow SOPs
 - Set of standard checks on code can be helpful to improve overall program quality
 - CSPs more concerned with if logic produced expected results given particular test data, and DSPs more concerned with comparisons of data outputs
+
+(Patel, 2025):
+- reproducibility and transparency are key
 
 ## Training and Support
 
@@ -156,9 +165,9 @@ Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Emp
 
 Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
 
-LEFT OFF HERE:
 Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
 
+LEFT OFF HERE:
 Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
 
 Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
