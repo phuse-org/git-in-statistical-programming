@@ -84,6 +84,10 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 (Liao, 2025):
 - Git is integrated with several platforms that can be used as SCEs, such as Posit Workbench/Connect
 
+(Shi, 2025):
+- Use templating feature to set up default files / folder structure
+- Many steps can be automated with a bash script
+
 
 ## GxP Compliance
 
@@ -103,6 +107,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 
 (Patel, 2025):
 - reproducibility and transparency are key
+
+(Shi, 2025):
+- reproducibility is key
 
 ## Training and Support
 
@@ -167,11 +174,15 @@ Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05
 
 Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
 
-LEFT OFF HERE:
 Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
 
+LEFT OFF HERE:
 Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
 
 Veríssimo, A., Viyash, V. (2025). Accelerating Shiny Application Development and Validation with Rhino [White paper OS15]. Appsilon. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS15.pdf
 
 Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
+
+A Risk-based Approach for Assessing R package Accuracy within a Validated Infrastructure: 
+https://www.pharmar.org/white-paper/ 
+External R Package Qualification Process in Regulated Environment: PharmaSUG-2022-SI-057.pdf 
