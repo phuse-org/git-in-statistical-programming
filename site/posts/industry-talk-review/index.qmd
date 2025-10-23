@@ -64,6 +64,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - needs tailored approach for leading and managing change
 - sprints to allow continuous improvement
 
+(Tahiliani, 2025):
+- some principles can be useful for SCE migration such as iterative progress and continuous feedback
+
 ## Need for Version Control
 
 (Andhale & Sood, 2025)
@@ -111,6 +114,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 (Shi, 2025):
 - reproducibility is key
 
+(PHUSE WG Notes):
+- align on access strategy (i.e. code from production programmers should not be visible to QC programmers)
+
 ## Training and Support
 
 (Andhale & Sood, 2025)
@@ -129,6 +135,11 @@ maintain morale and motivation. This means celebrating small wins and milestones
 
 (Liao, 2025):
 - embrace the openness of knowledge sharing in the open-source community
+
+(Tahiliani, 2025):
+- "Providing a few months' advance notice helps team members process the information, reducing anxiety and allowing them time to understand the change and come to terms with it."
+- Build a positive narrative and focus on the benefits
+- Repetition is important
 
 ## Tool Comparisons
 
@@ -176,9 +187,9 @@ Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Repor
 
 Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
 
-LEFT OFF HERE:
 Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
 
+LEFT OFF HERE:
 Veríssimo, A., Viyash, V. (2025). Accelerating Shiny Application Development and Validation with Rhino [White paper OS15]. Appsilon. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS15.pdf
 
 Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
