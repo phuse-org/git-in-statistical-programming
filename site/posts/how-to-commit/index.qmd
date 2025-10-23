@@ -1,0 +1,164 @@
+---
+title: "How to write a good commit message"
+subtitle: "Keep easy track changes history for your project"
+author: "alex"
+date: "2025-08-22"
+categories: [git, version-control, revision-history]
+# image: "thumb.png"
+toc: TRUE
+toc-title: "Table of contents"
+toc-depth: 5
+---
+
+This blog post covers the topic of Git commits, how it is working, and how to use them in an efficient way.
+
+## What is a commit?
+
+A commit is a snapshot of a Git repository at a specific time that will show all the changes made to the content of the repository.
+
+A commit will capture the followings:
+
+-   The author's name or ID of the commit
+
+-   The list of modified files and the comparison with the files (if any) of the source branch
+
+-   The date/time of the commit
+
+-   A message that will clearly describe (and possibly detail) the reason of the files' update.
+
+Each commit is associated to a specific identifier code.
+
+## Benefits of commits
+
+Despite the fact that making commit is mandatory when working on a Git repository to update files, there are a lot of benefits in using Git commits.
+
+### Keep clear history of changes
+
+In traditional approaches, each program has a header that contains a *"Revision history"* part. Git commits can easily replace this part because it contains the main information of a classic revision history message (author, date and reason for change), associated to the full files comparisons, such as a before/after view.
+
+All the changes of a single commit are stored in the same place. It means if you work on a single task that request to modify several programs, you can summarize the changes within one message. You do not need to open each separated files one by one to look at what was done, when, and by who.
+
+::: callout-tip
+#### Consolidate all commits of a branch
+
+Even with several commits, you can have a clear view of all the changes when merging to the source branch.
+:::
+
+### Backup save
+
+As Git is a version control software, and each commit is a snapshot done at a current state, it is easy to go back to a previous version of a branch using commit IDs.
+
+## When to commit?
+
+### Commit one file at a time or several?
+
+The choice depends on the context and what you want to show. Generally, each commit should be dedicated to a single purpose.
+
+If the task or feature to add is isolated to a single file, one commit message done at the end of the update can be easily readable and integrated to the history trackchange.
+
+In the case of a debugging task over several files, one commit message per file could also be useful, or when there is a need to track the evolution of a specific dataset.
+
+When a change on a program affects the behavior of other programs that also needs to be updated, one commit for all the modifications can be done. Also when you decide to modify both a program and the associated documentation.
+
+## How to write a good commit message
+
+As a history tracking, a commit message should be concise and clearly explain **what** was done and **why**.
+
+It is important to have good commit messages because, as mentioned above, it can replace a classic track change history. The goal is to have messages that will help understanding the changes and will help during the quality control, review or audit steps.
+
+::: callout-tip
+#### Consolidate all commits of a branch
+
+Even with several commits, you can have a clear view of all the changes when merging to the source branch.
+:::
+
+### Title
+
+The title should be very short (around 50 characters) and explain **what was done** on which file(s) (if relevant).
+
+Starting the title with a verb is very useful to explain what was done, for instance:
+
+::: note
+`Add TRTEMFL in adae.R`
+:::
+
+A naming convention can be defined at sponsor level to identify keyword, such as `Add`, `Fix`, `Remove`, `Update`, etc. The keyword can also be separated form the rest of the title using symbols such as `:` or `!` (for major or breaking changes). For instance:
+
+::: note
+`Add: TRTEMFL in adae.R`
+:::
+
+or
+
+::: note
+`Update! prim endpoint logic in efficacy (adre.R)`
+:::
+
+Using tags that to identify the location of changes can also be an option, such as `SDTM:`, `ADAM:` or `TLF:` for instance.
+
+::: note
+`TLF: create overview of AEs`
+:::
+
+::: callout-tip
+#### Keywords and source code management platforms
+
+So websites such as GitHub are able to recognize some keywords such as `closes` in the title, that will automatically perform an action on the issue or branch (for instance, `closes` will close the issue).
+:::
+
+### Detail
+
+The detail explains **why** the commit needed to be done, the methodological or technical context, or any relevant information that needs to understand the commit.
+
+It should contains, when relevant, the source (such as a new version of the statistical analysis plan, a decision taken in a meeting minutes, an email, etc), the impact (a modification on a ADaM dataset will have an impact on the TL&F describing the updated variables) or the associated logic.
+
+It should be informative but also concise.
+
+Using source code management platforms (GitHub, GitLab, BitBucket, etc) allows a direct link to issues in the title or detail of a commit (for instance `Linked to #35`)
+
+Here is an example of a commit message including a title and the body (detail):
+
+::: note
+**`Add! ANLzzFL in ADxx, ADyy, and ADzz for efficacy`**
+
+`Implements ANLzzFL variable in ADxx, ADyy, and ADzz to identify records for inclusion in the new efficacy analysis introduced in SAP release 3.0 (part 4.5.1, [title]).`
+
+`This flag marks the specific records relevant to the new analysis.`
+
+`Impact: downstream efficacy tables and participant selection for regulatory outputs.`
+:::
+
+::: callout-tip
+#### Conventional commits
+
+[conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0/) gives tips and guidance for writing commit messages.
+:::
+
+::: callout-tip
+#### Using AI to improve commits
+Tools such as GitHub Copilot can help to write a good commit message by reviewing a branch and what updates were done.
+:::
+
+## Examples of bad commit messages
+
+### Single keyword
+
+A message such as `fix` with no addition or detail is too vague. It is not possible to understand directly which file has been fixed and why.
+
+### Too wordy title
+
+The following title is way too long and difficult to read easily:
+
+`
+Update participant demographics summary dataset (ADSL) to include additional needed variables for geographical regions groups requested during the study team meeting on September 1st 2025 following the last version (1.2) of the SAP.
+`
+
+A better way would be to have a title like this one:
+
+`Add ADSL.REGION1(N)`
+
+And a detailed description such as this one:
+
+`Following study team meeting (01-SEP-2025).`
+
+`Done as per SAP (v1.2).`
