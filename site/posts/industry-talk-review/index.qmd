@@ -91,6 +91,10 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 - Use templating feature to set up default files / folder structure
 - Many steps can be automated with a bash script
 
+(Zhang, 2025):
+- leveraging automated deployment features to minimize human error
+- using PRs also encourgaes more collaboration and learning from team members
+
 
 ## GxP Compliance
 
@@ -116,6 +120,9 @@ The aim is not only to summarize how companies are leveraging Git, but to evalua
 
 (PHUSE WG Notes):
 - align on access strategy (i.e. code from production programmers should not be visible to QC programmers)
+
+(Zhang, 2025):
+- complete history of code changes which cannot be modified
 
 ## Training and Support
 
@@ -189,11 +196,10 @@ Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, repro
 
 Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
 
-LEFT OFF HERE:
-Veríssimo, A., Viyash, V. (2025). Accelerating Shiny Application Development and Validation with Rhino [White paper OS15]. Appsilon. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS15.pdf
-
 Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
 
+LEFT OFF HERE:
 A Risk-based Approach for Assessing R package Accuracy within a Validated Infrastructure: 
 https://www.pharmar.org/white-paper/ 
+
 External R Package Qualification Process in Regulated Environment: PharmaSUG-2022-SI-057.pdf 
