@@ -1,7 +1,7 @@
 ---
 title: "Industry Talk Review"
 author: "Rita Pecuch"
-date: "2025-03-29"
+date: "2025-11-18"
 categories: [review, git, pharmaceuticals]
 toc: TRUE
 toc-title: "Table of Contents"
