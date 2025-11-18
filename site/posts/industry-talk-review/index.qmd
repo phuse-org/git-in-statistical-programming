@@ -10,196 +10,65 @@ toc-depth: 5
 
 # Introduction
 
-The usage of Git in clinical programming within the pharmaceutical industry has been steadily increasing over the last several years. Beyond the discussions of our PHUSE working group, several talks at recent industry events have showcased how various companies are leveraging this technology.
+The usage of Git in statistical programming within the pharmaceutical industry has been steadily increasing over the last several years. Beyond the discussions of our PHUSE working group, several talks at recent industry events have showcased why and how various companies are leveraging this technology.
 
 # Search Strategy
 
-The search for materials spanned the 2025 PHUSE archive, as heavy representation from pharmaceutical companies is customary for PHUSE events. 
-
-The aim is not only to summarize how companies are leveraging Git, but to evaluate applications of open-source technology and propose how Git can be useful.
+The search for materials spanned the 2025 PHUSE archive, as heavy representation from pharmaceutical companies is customary for PHUSE events, as well as one relevant paper that was presented at PharmaSUG 2025 and R/Pharma 2025.
 
 # Major Themes
 
 ## Increasing Usage of Open-Source Programming
 
-(Andhale & Sood, 2025)
-- R is powerful language for statistical modeling and hypothesis testing within the industry
-- Clean data, apply stats models, and implement ML algorithms all within single platform
-- Shiny allows visualizing large datasets that are common in this industry, and get actionable insights
-- HTML, CSS, and JS knowledge not required --> so lowered barrier for getting more people into open-source programming
-- Interactive elements for deeper data exploration
-- Integrate data from several sources, across studies, leverage historical data
-- More flexibility to meet diverse needs of stakeholders
-- Scalability important for exponentially increasing amounts of data due to multicenter international trials
+Open-source languages, particularly R, have emerged as powerful tools for reporting, statistical modeling, and enabling actionable insights within the pharmaceutical industry, capable of facilitating entire workflows from data cleaning to advanced analytics in a single environment [1,2]. In addition, the integration of frameworks such as RShiny allows users to interactively visualize large-scale datasets without requiring knowledge of HTML, CSS, or JavaScript, thus reducing barriers to entry for open-source programming [1]. This accessibility, combined with R’s capacity to integrate data from multiple studies and leverage historical information, provides the flexibility and scalability needed to support diverse stakeholder needs and accommodate growing amounts of data, particularly from international, multicenter trials [1].
 
-(Arancibia, 2025)
-- R is primary open-source language for biostatistics (for many organizations)
-
-(Hume, 2025)
-- CDISC using open-source tools and test frameworks in the Enable and Automate pillar of 360i strategy
-
-(Kim, 2025):
-- rise of open-source making distinction between statistical programmers and traditional CS programmers less clear, as distcintion used to be based on use of proprietary software by stat programmers
-- open-source encourages collaboration
-
-(Liao, 2025):
-- use or propietary software is expensive and restricts freedom of operation
-- some visualization tools have steep learning curves for both developers and viewers
-- transparency of code is an attractive feature --> so let's also have transparency in all code changes
-
-(Patel, 2025):
-- Customize analyses to meet specific needs in clinical trials
-- Easy re-running and updates of results when using scripting
-- R stands out for data wrangling/manipulation and specialized statistical packages
-- Python stands out for automation and machine learning/AI
+Large organizations such as GSK, Pfizer, and CDISC, as well as smaller biotech companies, have incorporated open-source tools into their strategies, highlighting the broader industry momentum toward transparency, collaboration, and freedom from the high costs, restrictions, and often steep learning curves of proprietary software [2,3,4,5,6]. The rise of open-source solutions has also began to blur the boundaries between statistical and computer science programmers, emphasizing collaboration and the ability to customize, rerun, and update clinical analyses efficiently [2,6].
 
 ## Rise of Agile Methologies
 
-(Andhale & Sood, 2025)
-- becoming more common
-- Real-time communication and iterative progress in workflows
-
-(Ching, 2025)
-- dynamic and iterative approach
-- needs tailored approach for leading and managing change
-- sprints to allow continuous improvement
-
-(Tahiliani, 2025):
-- some principles can be useful for SCE migration such as iterative progress and continuous feedback
+Agile methodologies are becoming increasingly common in the pharmaceutical industry due to their focus on real-time communication, iterative workflows, and dynamic approaches that foster continuous improvement [1,7]. Successfully leading and managing change within agile environments requires tailored strategies, including the use of sprints to drive ongoing progress and adaptability [7]. Key agile principles—such as iterative progress and continuous feedback—can also be valuable when applied to complex industry-specific efforts such as SCE migration, ensuring flexibility and responsiveness throughout the transition [8].
 
 ## Need for Version Control
 
-(Andhale & Sood, 2025)
-- Important to support agile and collaborative development
-- Particulary useful for complex projects
+For teams using open-source technology in the pharmaceutical industry, Git provides robust support for agile and collaborative development, especially when managing complex projects that require frequent and coordinated contributions from multidisciplinary teams [1]. Its integration with platforms like GitHub enables transparent code management, collaborative planning, documentation, and discussion, all of which are essential for efficient development activities [4,5]. The transparency of code changes and use of features such as pull requests further enhance collaboration and foster team learning, and allows opportunities to document why certain decisions were made regarding code changes. Templating and automation such as GitHub Actions and other bash scripting streamline project setup and repetitive tasks, reducing the risk of human error [9,10]. 
 
-(Arancibia, 2025)
-- Need data sources for metrics to report to senior leadership (topics such as how much open-source is being used)
-• R Code size out of total code (R and SAS) 
-• Total Repos with any R usage 
-• Repos where R code size (out of R and SAS) is greater than Target Precent 
-• Growth of R: Rate of change of R code in a repo and organization 
-- Lots of useful info can be pulled with GitHub API to automate metrics reporting. And several languages including R have packages that interface with the GitHub API and simplify the syntax of API call execution
-
-(Hume, 2025)
-- "GitHub provides the means to collaborate on software and standards development activities as well as providing mechanisms for discussions, documentation, and planning activities."
-
-(Liao, 2025):
-- Git is integrated with several platforms that can be used as SCEs, such as Posit Workbench/Connect
-
-(Shi, 2025):
-- Use templating feature to set up default files / folder structure
-- Many steps can be automated with a bash script
-
-(Zhang, 2025):
-- leveraging automated deployment features to minimize human error
-- using PRs also encourgaes more collaboration and learning from team members
-
+Additionally, Git’s ecosystem provides valuable opportunities for data-driven reporting and strategic oversight. Tools like the GitHub API allow organizations to automatically extract key metrics for continuous improvement as well as reporting to senior leadership. For example, GSK extract metrics such as the proportion and growth of R code versus SAS, the total number of repositories using R, and usage trends over time [3]. Languages like R offer dedicated packages to interface with the GitHub API, making metric collection and analysis more accessible. 
 
 ## GxP Compliance
 
-(Andhale & Sood, 2025):
-- All open source packages used for regulatory submissions must be validated (proven to meet regulatory standards), documented, and controlled in SCE
-- Must be traceability of all code changes
-- Allows reproducibility of all versions of code
+For teams using open-source technology in the pharmaceutical industry, the use of Git can support compliance with key regulatory and auditing requirements by providing a complete immutable history of code changes [1,10]. Compliance with regulations such as CFR21 Part 11 requires that programming takes place in controlled environments, preserving data privacy while allowing specific metadata sharing with regulatory authorities to facilitate reproducibility [2,6,9]. Git is integrated with several SCEs (e.g., Posit Workbench/Connect) [5].
 
-(Kim, 2025):
-- bound to work with the CFR21 Part 11 rule
-- programming must be done in controlled environment
-- do not violate data privacy
-- can share certain metadata information with RAs to simplify reproducibility of programming environments
-- Testing and validation should not be used interchangeably. Testing can stay with computer science programmers (CSP) and use open source tools such as GitHub Actions, validation of data outputs should stay with stat programmers (DSPs) and follow SOPs
-- Set of standard checks on code can be helpful to improve overall program quality
-- CSPs more concerned with if logic produced expected results given particular test data, and DSPs more concerned with comparisons of data outputs
-
-(Patel, 2025):
-- reproducibility and transparency are key
-
-(Shi, 2025):
-- reproducibility is key
-
-(PHUSE WG Notes):
-- align on access strategy (i.e. code from production programmers should not be visible to QC programmers)
-
-(Zhang, 2025):
-- complete history of code changes which cannot be modified
+Although Git is traditionally used for tracking code changes, having a clear easy to understand history of which code versions produced which data outputs is extremely beneficial. Data outputs, even in development and testing environments, and traditionally stored in specific environments. Taking advantage of the unique identifiers known as commit hashes assigned to each version of the code by Git can serve as helpful labels for different versions of data outputs. For example, a strategy employed by Graticule is to label different versions of data outputs stored in their data lake with the commit hash of the version of the code that produced those outputs [11].
 
 ## Training and Support
 
-(Andhale & Sood, 2025)
-- Collaborative learning communities r R programming
-
-(Arancibia, 2025)
-- Pulling specific info via GitHub API to assess where repos need improvements
-
-(Ching, 2025):
-- "Although GitHub has many selling points, many of its concepts are new and foreign to most of the statisticians and programmers going through this transition. Taking into account the effort and time required to upskill an entire department in a very new way of working, the transition to GitHub proved to be more daunting than we realized, as it was not just about learning how to use GitHub, it was also about learning to adapt to process changes to leverage the full capabilities of GitHub such as branching, tags, and the level of granularity in its version control"
-- "creating a culture that embraces change is essential. This can be achieved through leadership support, clear 
-communication of the benefits of change, and recognition of employees' efforts during the transition"
-- "it’s important to celebrate and appreciate those who are leading, implementing, and embracing change to 
-maintain morale and motivation. This means celebrating small wins and milestones achieved during the project"
-- technical support important --> in this case helpful to have SMEs embedded in teams to help out
-
-(Liao, 2025):
-- embrace the openness of knowledge sharing in the open-source community
-
-(Tahiliani, 2025):
-- "Providing a few months' advance notice helps team members process the information, reducing anxiety and allowing them time to understand the change and come to terms with it."
-- Build a positive narrative and focus on the benefits
-- Repetition is important
-
-## Tool Comparisons
-
-(Opalka, 2025):
-- GitHub:
-  - Owned by Microsoft
-  - More users across community
-  - Unclear if you can suggest code edits which can then be accepted/rejected
-  - Centered around main branch
-  - Cheaper
-- GitLab
-  - Standalone company
-  - Less users across community
-  - Can suggest code edits which can then be accepted/rejected
-  - Encourages use of pre-production branch before production branch
-  - More expensive
--  "From an enterprise perspective…
- Github is much cheaper than Gitlab - the enterprise plans are $21 per user/month and $99 per 
-user/month respectively, however Gitlab has security elements already included and with GitHub 
-these are about $50/month extra (Prices as of 2024). Which repository is for you ultimately 
-depends on whether you want to prioritise stability, safety and an all-in-one solution (GitLab) 
-or speed, cheaper costs and a bigger community (GitHub)."
+Despite the many advantages of using Git to support emerging trends of open-source technology use and collaborative programming in the pharmaceutical industry, this technology can have a steep learning curve of concepts that are new to many statistical programmers [7]. The open-source community is meant to be collaborate by nature and offers many resources and learning communities to support individuals that are learning Git [1,5]. Specific recommendations that have been discussed for better fostering a culture that embraces change include clear communication of benefits and specific goals of new approach, recognition of employees' efforts along the learning journey by celebrating small wins, embedding subject matter experts into adopting teams, providing ample notice in advance of the change, and providing ample opportunities for practice and repetition [7,8]. Metrics can also be gathered along the way by utilizing the GitHub API to assess trends which could be improved across repositories [3]. This can vary by organization and what the specific goals are to be tracked, but examples could include number of merge conflicts and commit message analysis.
 
 # Conclusion
 
+Git can provide robust support for change tracking as open-source programming and agile methodologies become more prevalanet in the pharmaceutical industry. Ways in using this technology to best support GxP practices are continuing to be discussed, and fostering a culture that welcomes change for the better is essential for a smooth implementation.
+
 # References
-Posit. (2024, November). GSK's R Journey: From Pilot Projects to Enterprise Adoption | Hosted by Posit. Retrieved from https://www.youtube.com/watch?v=xDrt6txplek
 
-Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP compliant and validated manner for clinical trials use [White paper OS3464]. Sycamore Informatics India Private Limited. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS10.pdf
+1. Andhale, S.H., Sood, S. (2025). Harnessing the Power of R Shiny in a GxP compliant and validated manner for clinical trials use [White paper OS3464]. Sycamore Informatics India Private Limited. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS10.pdf
 
-Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biostatistics Organizations [White paper OS02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS02.pdf
+2. Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
 
-Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
+3. Arancibia, B. (2025). What R We Counting? The Quest to Quantify R Usage in Biostatistics Organizations [White paper OS02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS02.pdf
 
-Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
+4. Hume, S. (2025). A Technical Roadmap Defining CDISC's Path to End-to-End Automation [White paper DS05]. CDISC. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_DS05.pdf
 
-Kim, J. (2025). The changes in the job of statistical programmer in the 
+5. Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
+
+6. Kim, J. (2025). The changes in the job of statistical programmer in the 
 pharmaceutical industry [White paper ET07]. Pfizer Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET07.pdf
 
-Liao, C. (2025). Building Rome in a Few Months: How Open Source Technologies Empower Small Pharma [White paper OS07]. Recursion. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS07.pdf
+7. Ching, E. (2025). Learning to skate, pedal, and drive – Change leadership in the world of Agile delivery [White paper PD02]. GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PD02.pdf
 
-Opalka, A. (2025). GitLab vs GitHub: The Battle of the Repositories [Poster PP05]. Roche. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/CSS/EU/Utrecht/POS_PP05.pdf
+8. Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
 
-Patel, J. (2025). Evaluation of Open-Source Technologies in Clinical Trial Reporting [White paper PP15]. AstraZeneca US Biometric. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP15.pdf
+9. Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
 
-Shi, T., Song, L., Nomula, V.K. (2025). Implementation of a risk-governed, reproducible, and collaborative R workflow for Real World Evidence Projects [White paper PP27]. Merck & Co., Inc. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP27.pdf
+10. Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
 
-Tahiliani, K., Jain, A. (2025). A Journey Through an Innovative Approach to Migration of Legacy System to New Multilingual Statistical Computing Environment (SCE). GSK. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_ET21.pdf
-
-Zhang, P., Chen, J., Yang, F., Chang, V., Lee, J. (2025). Generate Clinical Study Report (CSR) document using {quarto} and {shiny} [White paper OS06]. CIMS Global. https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS06.pdf
-
-LEFT OFF HERE:
-A Risk-based Approach for Assessing R package Accuracy within a Validated Infrastructure: 
-https://www.pharmar.org/white-paper/ 
-
-External R Package Qualification Process in Regulated Environment: PharmaSUG-2022-SI-057.pdf 
+11. Dusendang, J., Bath, S., Orozco, S., Asper, A. , Koren, Y. (2025). Integrating Collaborative Programming with Automated Traceability and Reproducibility in Pharma Studies and Real-World Data Projects by Adapting DevOps Best-Practices. [Paper OS-111]. https://pharmasug.org/proceedings/2025/OS/PharmaSUG-2025-OS-111.pdf.
