@@ -20,6 +20,22 @@ This branching strategy can be used in the case of a team working on a specific 
 
 It could potentially be used for a study or a product with several distinct activities using flags (see [Branch locking and flagging](##%20Branch%20locking%20and%20flagging)).
 
+## Usage of a devel branch
+
+A devel branch is usually a development branch located between the main and other specific development branches. It is used to integrate multiple features and updated before all of those are merged with the main branch. The main objective is to ensure stability of interdependent updates. It is possible that two different features, which work fine in separate branches, may cause conflicts when merged into the same branch. The devel branch is used to integrate all updated features and make any necessary final adjustments before merging into the main branch. It's working as a safety net before the final merge to main.
+
+The figure below shows an example of the usage of the devel branch. The two feature branches are working without any problem separately, but removing ADAE.ARELGRP1 causes a conflict issue in the devel branch. This conflict should be resolved before merging into main.
+
+![branching strategy](pictures/bs-01b.png) 
+
+A devel branch is very useful in the following cases:
+
+-   Several of different people are working on the same time on different features
+
+-   The features can present interdependancies
+
+In the case of a single or a little group of persons working together, or when tasks have no interdependancies, the devel branch could be avoided.
+
 ## One main branch per activity
 
 A single study often needs to deal with different activities, sometime happening at the same moment. One potential way to use git in theses cases could be to have:
