@@ -36,7 +36,13 @@ A devel branch is very useful in the following cases:
 
 In the case of a single or a little group of persons working together, or when tasks have no interdependancies, the devel branch could be avoided.
 
-## One main branch per activity
+## One main branch duplicated per milestone
+
+Several clinical studies relies on the same base programs for several milestone, while some milestones require some specific programs. Storing everything in the main branch and duplicate it for the final step of a milestone is an option.
+
+![branching strategy](pictures/bs-01c.png) 
+
+## One main branch per milestone
 
 A single study often needs to deal with different activities, sometime happening at the same moment. One potential way to use git in theses cases could be to have:
 
