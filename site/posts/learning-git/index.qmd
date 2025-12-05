@@ -1,0 +1,71 @@
+---
+title: "Learning Git: Free Resources"
+subtitle: "Best resources to master Git for programmers and data scientists"
+author: "croca"
+date: "2025-12-05"
+categories: [git, learning, resources, education]
+toc: TRUE
+toc-title: "Table of contents"
+toc-depth: 3
+---
+
+Whether you're a programmer or data scientist, mastering Git is essential for modern collaborative work. It's not so difficult, just start brick by brick and as any other programming language, you will end up building great things with it!
+
+
+
+
+## 1. Pro Git Book (Free)
+
+**Link:** [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
+
+The **official Git book** written by Scott Chacon and Ben Straub. Anybody who really struggled once in their life with Git must know about this. It's comprehensive, well-organized, and completely free. Available in multiple languages and formats (web, PDF, ePub).
+
+**Best for:** All levels - from beginners to advanced users
+
+**Why it's great:** Official documentation, regularly updated, and covers everything from basics to Git internals.
+
+
+## 2. Atlassian Git Tutorials
+
+**Link:** [https://www.atlassian.com/git/tutorials](https://www.atlassian.com/git/tutorials)
+**Link2:** [https://www.coursera.org/learn/version-control-with-git](https://www.coursera.org/learn/version-control-with-git) (NOTE: For a price you also can get a certification!)
+
+Comprehensive tutorials covering Git basics, collaboration workflows, and advanced tips. Created by the team behind Bitbucket.
+
+**Best for:** Intermediate users wanting to understand workflows
+
+**Why it's great:** Clear explanations with visual diagrams, covers both Git basics and team collaboration strategies.
+
+## 3. Learn Git Branching (Interactive)
+
+**Link:** [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
+
+An interactive, visual game-like tutorial that helps you understand Git branching and merging through challenges. (Personally I only tried the beginning but it seems super interactive!)
+
+**Best for:** Visual learners and those struggling with branching concepts
+
+**Why it's great:** Gamified learning experience, visual representation of Git operations, progressive difficulty.
+
+
+
+## Bonus Resources (if you are comfortable with VScode, R or Python, the tools or tutorials below will make your life a bit easier)
+
+### For Visual Studio Code Users
+- **GitLens Extension:** Supercharges Git in VS Code with blame annotations, commit searching, and more
+- **Git Graph Extension:** Visualize your repository's commit history
+
+### For R Users
+- **Happy Git with R:** [https://happygitwithr.com/](https://happygitwithr.com/) - Specifically for R users integrating Git with RStudio
+
+### For Python Users
+- **Real Python Git Tutorial:** [https://realpython.com/python-git-github-intro/](https://realpython.com/python-git-github-intro/) - Git for Python developers
+
+
+## Tips for Learning Git
+
+1. **Start with basics:** Don't try to learn everything at once. Master `commit`, `push`, `pull`, and `branch` first.
+
+2. **Make mistakes in safe environments!** The best way to learn Git is to break things and fix them in test repositories!  
+
+3. Enjoy!
+
