@@ -4,24 +4,23 @@ about:
   image: phuselogo.png
   template: solana
   links:
+    - text: Contribute
+      href: Contribute.qmd
     - icon: github
       text: Github
       href: https://github.com/phuse-org/git-in-statistical-programming
       
 ---
 
-This blog contains posts from the PHUSE working group on The use of Git in Statistical Programming
+This is the website for the PHUSE working group on The use of Git in Statistical Programming.
+
+It includes a [blog](posts.qmd) and a draft for a [white paper](white-paper/index.html)
 
 # Meetings
 
-Meetings are happening bi-weekly every Friday
+Meetings are happening bi-weekly switching between Friday and Wednesday
 
-# Goal
+# Contribute
 
-- White paper about Git in pharma for statisticians : Guidelines
-- Poster for Europe PHUSE 2025
+Want to contribute? Read [this guide](Contribute.qmd)
 
-# Content
-
-- [White Paper draft](white-paper/index.html)
-- [Blog posts](posts.qmd)
