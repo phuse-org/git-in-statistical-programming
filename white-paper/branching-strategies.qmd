@@ -4,10 +4,10 @@ Defining a branching strategy can be tricky and requires to identify the needs o
 
 There is no need to define one single branching strategy for all of the repository of a company or institution. The choice should be made by type of activity.
 
-::: callout-caution
-### No explanation of what a branch is.
+::: callout-tip
+### About branches
 
-\[alex:\] I assume the concept of branch, when and how to use its is defined in another part of the white paper.
+[This guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) explains what a branch is and how it's working.
 :::
 
 ## Basic git structure
@@ -26,7 +26,7 @@ A devel branch is usually a development branch located between the main and othe
 
 The figure below shows an example of the usage of the devel branch. The two feature branches are working without any problem separately, but removing ADAE.ARELGRP1 causes a conflict issue in the devel branch. This conflict should be resolved before merging into main.
 
-![branching strategy](pictures/bs-01b.png) 
+![branching strategy](pictures/bs-01b.png)
 
 A devel branch is very useful in the following cases:
 
@@ -36,11 +36,15 @@ A devel branch is very useful in the following cases:
 
 In the case of a single or a little group of persons working together, or when tasks have no interdependancies, the devel branch could be avoided.
 
+An example of workflow using a devel branch is detailled at [this link](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
 ## One main branch duplicated per milestone
 
 Several clinical studies relies on the same base programs for several milestone, while some milestones require some specific programs. Storing everything in the main branch and duplicate it for the final step of a milestone is an option.
 
-![branching strategy](pictures/bs-01c.png) 
+![branching strategy](pictures/bs-01c.png)
+
+A branch can be locked using a [protection rule (see #13)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule).
 
 ## One main branch per milestone
 
@@ -58,7 +62,7 @@ This branching strategy would allow to work separately on each activity, keeping
 
 Two issues are handled at the same moment. Issue #1 is dedicated to an efficacy endpoint that should not be part of the DMC, while Issue #2 is stricly dedicated to the DMC activity and will not be part of the final CSR outputs.
 
-![branching strategy](pictures/bs-02.png) 
+![branching strategy](pictures/bs-02.png)
 
 ### Common issue
 
