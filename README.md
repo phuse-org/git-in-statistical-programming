@@ -38,5 +38,19 @@ You can get involved in one of the following ways
 
 If you want to update content, please read this [contributors guide](https://phuse-org.github.io/git-in-statistical-programming/Contribute.html)
 
+## 3 White paper contributors
+
+This table gives the current chapters of the white paper, their status, and who is the owner of that chapter. 
+
+The owner is responsible for ensuring the chapter is worked on, but is not solely responsible for producing the content.
+
+|Chapter title| Owner | Progress|
+|-------------|-------|---------|
+|The state of Git usage across the industry||0%|
+|Change Management and Git||0%|
+|Audit trail requirements and Git||0%|
+|QC Process and Git||0%|
+|Recommended ways of using Git||0%|
+
 
 
