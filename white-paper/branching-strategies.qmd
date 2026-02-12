@@ -14,7 +14,47 @@ There is no need to define one single branching strategy for all of the reposito
 
 The basic structure of a git repository relies on a principal branch called **main**, which will be duplicated in **sub-branches** that will in the end merged back to the main branch through a pull request.
 
-![basic git structure](pictures/bs-01.png)
+```{mermaid}
+%%| label: fig-basic-git-structure
+%%| fig-cap: "Basic Git branching structure"
+
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#87CEEB'}}}%%
+gitGraph
+    commit id: "Start"
+    commit id: "Branch a"
+    branch feature-a
+    checkout feature-a
+    commit id: "Commit a1"
+    checkout main
+    merge feature-a tag: "PR: Merge feature-a"
+    commit id: "Merge A"
+    
+    checkout main
+    commit id: "Branch b"
+    branch feature-b
+    checkout feature-b
+    commit id: "Commit b1"
+    checkout main
+    merge feature-b tag: "PR: Merge feature-b"
+    commit id: "Merge B"
+```
+
+```{mermaid}
+%%| label: fig-basic-git-structure
+%%| fig-cap: "Basic Git branching structure"
+flowchart TD
+    main["Main branch"]
+    feature-a("Feature A branch")
+    feature-b("Feature B branch")
+    PR1>"Pull request"]
+    PR2>"Pull request"]
+    main --> feature-a
+    feature-a --> PR1
+    PR1 --> main
+    main --> feature-b
+    feature-b --> PR2
+    PR2 --> main
+```
 
 This branching strategy can be used in the case of a team working on a specific activity of a single clinical study within a repository.
 
@@ -26,7 +66,49 @@ A devel branch is usually a development branch located between the main and othe
 
 The figure below shows an example of the usage of the devel branch. The two feature branches are working without any problem separately, but removing ADAE.ARELGRP1 causes a conflict issue in the devel branch. This conflict should be resolved before merging into main.
 
-![branching strategy](pictures/bs-01b.png)
+```{mermaid}
+%%| label: fig-devel-branch-structure
+%%| fig-cap: "Devel branch structure"
+
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#87CEEB'}}}%%
+gitGraph
+    commit
+    branch devel
+    checkout devel
+    commit
+    branch feature-1
+    checkout feature-1
+    commit
+    checkout devel
+    merge feature-1
+    branch feature-2
+    checkout feature-2
+    commit
+    checkout devel
+    merge feature-2
+    checkout main
+    merge devel
+```
+
+```{mermaid}
+%%| label: fig-devel-branch-structure
+%%| fig-cap: "Devel branch structure"
+flowchart TD
+    main["Main branch"]
+    devel(["Devel branch"])
+    feature-1("Feature 1 branch")
+    feature-2("Feature 2 branch")
+    pr1>"Pull request"]
+    pr2>"Pull request"]
+    main --> devel
+    devel --> feature-1
+    devel -.-> feature-2
+    feature-1 --> pr1
+    feature-2 -.-> pr2
+    pr1 --> devel
+    pr2 -.-> devel
+    devel ==> |"Resolve conflicts"| main
+```
 
 A devel branch is very useful in the following cases:
 
@@ -42,7 +124,54 @@ An example of workflow using a devel branch is detailled at [this link](https://
 
 Several clinical studies relies on the same base programs for several milestone, while some milestones require some specific programs. Storing everything in the main branch and duplicate it for the final step of a milestone is an option.
 
-![branching strategy](pictures/bs-01c.png)
+```{mermaid}
+%%| label: fig-dup-milestone-branch-structure
+%%| fig-cap: "Main branch duplicated per milestone structure"
+flowchart TB
+    main["Main branch"]
+    csr(["CSR"])
+    dmc1(["DMC #1"])
+    dmc2(["DMC #2"])
+    main -.-> csr
+    main -.-> dmc1
+    main -.-> dmc2
+    flag_csr[("Flag #1")]
+    flag_dmc1[("Flag #2")]
+    flag_dmc2[("Flag #3")]
+    csr -.-> flag_csr
+    dmc1 -.-> flag_dmc1
+    dmc2 -.-> flag_dmc2
+```
+
+```{mermaid}
+%%| label: fig-dup-milestone-branch-structure
+%%| fig-cap: "Main branch duplicated per milestone structure"
+flowchart TB
+    subgraph Main["Main Branch"]
+        main["Main Branch"]
+        feature-1["Feature #1"]
+        pr1["Pull request"]
+        main --> feature-1
+        feature-1 --> pr1
+        pr1 --> main
+        feature-2["Feature #2"]
+        pr2["Pull request"]
+        main --> feature-2
+        feature-2 --> pr2
+        pr2 --> main
+    end
+
+    subgraph Milestones["Tag releases"]
+        milestone-1["DMC branch"]
+        milestone-2["CSR branch"]
+        tag-1["Tag #1"]
+        tag-2["Tag #2"]
+        main --> milestone-1
+        main --> milestone-2
+        milestone-1 --> tag-1
+        milestone-2 --> tag-2
+    end
+```
 
 A branch can be locked using a [protection rule (see #13)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule).
 
@@ -62,18 +191,84 @@ This branching strategy would allow to work separately on each activity, keeping
 
 Two issues are handled at the same moment. Issue #1 is dedicated to an efficacy endpoint that should not be part of the DMC, while Issue #2 is stricly dedicated to the DMC activity and will not be part of the final CSR outputs.
 
-![branching strategy](pictures/bs-02.png)
+```{mermaid}
+%%| label: fig-milestone-branch-structure
+%%| fig-cap: "One branch per milestone structure"
+flowchart TD
+    csr["CSR"]
+    dmc["DMC"]
+    branch-1("Branch #1")
+    branch-2("Branch #2")
+    pr1>"Pull request"]
+    pr2>"Pull request"]
+    csr --> branch-1
+    dmc --> branch-2
+    branch-1 --> pr1
+    pr1 --> |"Merge #1"| csr
+    branch-2 --> pr2
+    pr2 --> |"Merge #2"| dmc
+```
 
 ### Common issue
 
 If something common to more than one of the main branches should be made, it is possible to make as much pull requests as requested. The only tricky part is to define the source branch. In this example, we take the CSR.
 
-![branching strategy](pictures/bs-03.png)
+```{mermaid}
+%%| label: fig-common-issue-branch-structure
+%%| fig-cap: "Common issue branch structure"
+flowchart TB
+    csr["CSR"]
+    dmc["DMC"]
 
-## Branch locking and flagging
+    branch-c("Common issue branch")
+    prc>"Pull request"]
 
-::: callout-caution
-## WIP
+    csr --> branch-c --> prc
 
-Work in progress.
-:::
+    prc --> csr
+    prc --> dmc
+```
+
+```{mermaid}
+%%| label: fig-common-issue-branch-structure
+%%| fig-cap: "Common issue branch structure"
+%%{init: {'theme':'base', 'themeVariables': { 'subgraphBkgColor':'transparent', 'subgraphBorderColor':'transparent'}}}%%
+flowchart TB
+    subgraph Top[" "]
+        direction LR
+        csr["CSR"]
+        dmc["DMC"]
+    end
+    branch-c("Common issue branch")
+    prc>"Pull request"]
+    csr --> branch-c
+    branch-c --> prc
+    prc -->|"Merge common issue"| csr
+    prc -->|"Merge common issue"| dmc
+```
+
+## Pros and cons
+
+Many other strategies can be defined, and the choice depends on the needs of each study team. Also, some of the strategies displayed above can be combined (for instance using a deven branch with a milestone main branch strategy).
+
+Here is a summary of the different pros and cons of the different strategies presented above:
+
++-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| strategy                          | pros                                                                       | cons                                                                                                          |
++===================================+============================================================================+===============================================================================================================+
+| **devel branch**                  | -   Safety net before merging into main                                    | -   Not as instantaneous merge into main, takes more time                                                     |
+|                                   |                                                                            |                                                                                                               |
+|                                   | -   Useful when multiple branches are active and merged at the same moment | -   Not very useful when a few people are working at the same moment on a project                             |
++-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| **Main branch duplicated**        | -   Only one branch to maintain                                            | -   Files tagged for a milestone its do not belong to                                                         |
+|                                   |                                                                            |                                                                                                               |
+|                                   | -   Useful when most of the files are common to several milestones         |     or                                                                                                        |
+|                                   |                                                                            |                                                                                                               |
+|                                   |                                                                            | -   Need to identify and remove files when duplicating and tag the main branch                                |
++-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| **One main branch per milestone** | -   Clear difference between milestones                                    | -   Several branches to maintain                                                                              |
+|                                   |                                                                            |                                                                                                               |
+|                                   | -   No risk to have file located in the wrong milestone branch             | -   Intermediate branches regarding files common to several milestone must be merged once for each milestone  |
+|                                   |                                                                            |                                                                                                               |
+|                                   | -   Useful when milestones have really different files to run              |                                                                                                               |
++-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+

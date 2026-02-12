@@ -9,10 +9,12 @@ book:
     - index.qmd
     - state.qmd
     - Challenges.qmd
-    - branching-strategies.qmd
+    - part: "Recommendations"
+      chapters:
+        - recommendations.qmd
+        - branching-strategies.qmd
     - audittrail.qmd
     - qcintegration.qmd
-    - recommendations.qmd
     - summary.qmd
     - references.qmd
   appendices:
