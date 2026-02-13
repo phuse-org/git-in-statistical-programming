@@ -12,31 +12,31 @@ There is no need to define one single branching strategy for all of the reposito
 
 ## Basic git structure
 
-The basic structure of a git repository relies on a principal branch called **main**, which will be duplicated in **sub-branches** that will in the end merged back to the main branch through a pull request.
+The basic structure of a git repository relies on a principal branch called **main**, which will be duplicated in **feature branches** that will in the end merged back to the main branch through a pull request.
 
 ```{mermaid}
 %%| label: fig-basic-git-structure
 %%| fig-cap: "Basic Git branching structure"
 
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#87CEEB'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#87CEEB'}}}%% 
 gitGraph
     commit id: "Start"
-    commit id: "Branch a"
-    branch feature-a
-    checkout feature-a
-    commit id: "Commit a1"
+    commit id: "Branch 1"
+    branch feature-1
+    checkout feature-1
+    commit id: "Commit 1a"
     checkout main
-    merge feature-a tag: "PR: Merge feature-a"
-    commit id: "Merge A"
+    merge feature-1 tag: "PR: Merge feature-1"
+    commit id: "Merge 1"
     
     checkout main
-    commit id: "Branch b"
-    branch feature-b
-    checkout feature-b
-    commit id: "Commit b1"
+    commit id: "Branch 2"
+    branch feature-2
+    checkout feature-2
+    commit id: "Commit 2a"
     checkout main
-    merge feature-b tag: "PR: Merge feature-b"
-    commit id: "Merge B"
+    merge feature-2 tag: "PR: Merge feature-2"
+    commit id: "Merge 2"
 ```
 
 ```{mermaid}
@@ -44,15 +44,15 @@ gitGraph
 %%| fig-cap: "Basic Git branching structure"
 flowchart TD
     main["Main branch"]
-    feature-a("Feature A branch")
-    feature-b("Feature B branch")
+    feature-1("Feature 1 branch")
+    feature-2("Feature 2 branch")
     PR1>"Pull request"]
     PR2>"Pull request"]
-    main --> feature-a
-    feature-a --> PR1
+    main --> feature-1
+    feature-1 --> PR1
     PR1 --> main
-    main --> feature-b
-    feature-b --> PR2
+    main --> feature-2
+    feature-2 --> PR2
     PR2 --> main
 ```
 
@@ -173,7 +173,9 @@ flowchart TB
     end
 ```
 
-A branch can be locked using a [protection rule (see #13)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule).
+Several possibilities can be applied. The most common is to use a tag release on the main branch to identify the milestone. It will save the main branch and clearly identify it as a milestone reached. This link provides more details about [tagging releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/managing-releases-in-a-repository) on GitHub. Similar actions can be performed on other source code management platforms.
+
+Another way is to duplicate the main branch and use a flag to identify the milestone, with the possibility to lock it. A branch can be locked using a [protection rule (see #13)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule).
 
 ## One main branch per milestone
 
@@ -246,6 +248,65 @@ flowchart TB
     prc -->|"Merge common issue"| csr
     prc -->|"Merge common issue"| dmc
 ```
+
+## Hot fixes
+
+Hot fixes are urgent corrections that need to be applied to a specific milestone that has already been released or tagged. These fixes are typically critical bugs or issues discovered after a milestone has been finalized and need immediate attention.
+
+When working with milestone branches, hot fixes can be applied in different ways depending on the branching strategy used:
+
+### Hot fixes with tagged milestones
+
+When milestones are identified using tags on the main branch, a hot fix should be created from the specific tag, applied, and then merged back to main. This ensures the fix is available for future milestones while also addressing the specific tagged milestone.
+
+```{mermaid}
+%%| label: fig-hotfix-tagged-structure
+%%| fig-cap: "Hot fix workflow with tagged milestones"
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#87CEEB'}}}%%
+gitGraph
+    commit id: "Initial"
+    commit id: "Milestone 1"
+    commit id: "Tag: v1.0"
+    commit id: "Continue dev"
+    branch hotfix-1.0.1
+    checkout hotfix-1.0.1
+    commit id: "Hot fix"
+    checkout main
+    merge hotfix-1.0.1 tag: "PR: Hot fix"
+    commit id: "Tag: v1.0.1"
+```
+
+### Hot fixes with milestone branches
+
+When using separate milestone branches (e.g., CSR, DMC), hot fixes should be created from the specific milestone branch, applied, and then merged back to that milestone branch. If the fix is also relevant for other milestones or the main development branch, it can be cherry-picked or merged to those branches as well.
+
+```{mermaid}
+%%| label: fig-hotfix-milestone-structure
+%%| fig-cap: "Hot fix workflow with milestone branches"
+flowchart TB
+    milestone["Milestone branch<br/>(e.g., DMC #1)"]
+    hotfix("Hot fix branch")
+    pr>"Pull request"]
+    milestone --> hotfix
+    hotfix --> pr
+    pr -->|"Merge hot fix"| milestone
+    
+    main["Main branch"]
+    pr -->|"Cherry-pick or merge"| main
+```
+
+### Best practices for hot fixes
+
+- **Create from the milestone**: Always branch the hot fix from the specific milestone tag or branch that needs the fix.
+- **Keep it minimal**: Hot fixes should contain only the essential changes needed to resolve the critical issue.
+- **Test thoroughly**: Even though hot fixes are urgent, they should be tested before merging to avoid introducing new issues.
+- **Document the fix**: Clearly document why the hot fix was necessary and what it addresses.
+- **Merge back to main**: After applying the hot fix to the milestone, ensure it's also merged back to the main branch so future milestones include the fix.
+- **Create a new tag**: After merging a hot fix to a milestone branch, create a new tag (e.g., v1.0.1) to mark the corrected version.
+
+Hot fixes are essential for maintaining the integrity of released milestones while allowing development to continue on the main branch without disruption.
+
+[This webpage](https://www.atlassian.com/git/tutorials/cherry-pick) provides more details about cherry-picking when using a devel branch.
 
 ## Pros and cons
 
