@@ -12,7 +12,7 @@ There is no need to define one single branching strategy for all of the reposito
 
 ## Basic git structure
 
-The basic structure of a git repository relies on a principal branch called **main**, which will be duplicated in **feature branches** that will in the end merged back to the main branch through a pull request.
+A Git repository is typically organized around a primary branch, **main**, from which **feature branches** are created. These feature branches isolate development work and are eventually merged back into main through a pull request.
 
 ```{mermaid}
 %%| echo: false
