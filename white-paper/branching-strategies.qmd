@@ -7,7 +7,7 @@ There is no need to define one single branching strategy for all of the reposito
 ::: callout-tip
 ### About branches
 
-[This guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) explains what a branch is and how it's working.
+[This guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) explains what a branch is and how it works.
 :::
 
 ## Basic git structure
