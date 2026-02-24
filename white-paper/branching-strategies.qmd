@@ -127,7 +127,7 @@ flowchart TD
 
 A devel branch is very useful in the following cases:
 
--   Several of different people are working on the same time on different features
+-   Several different people are working at the same time on different features
 
 -   The features can present interdependancies
 
