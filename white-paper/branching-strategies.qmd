@@ -129,7 +129,7 @@ A devel branch is very useful in the following cases:
 
 -   Several different people are working at the same time on different features
 
--   The features can present interdependancies
+-   The features can present interdependencies
 
 In the case of a single or a little group of persons working together, or when tasks have no interdependancies, the devel branch could be avoided.
 
