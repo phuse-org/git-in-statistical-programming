@@ -66,7 +66,7 @@ flowchart TD
 
 This branching strategy can be used in the case of a team working on a specific activity of a single clinical study within a repository.
 
-It could potentially be used for a study or a product with several distinct activities using flags (see [Branch locking and flagging](##%20Branch%20locking%20and%20flagging)).
+It could potentially be used for a study or a product with several distinct activities using [tagging releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/managing-releases-in-a-repository).
 
 ## Usage of a devel branch
 
@@ -152,9 +152,9 @@ flowchart TB
     main -.-> csr
     main -.-> dmc1
     main -.-> dmc2
-    flag_csr[("Flag #1")]
-    flag_dmc1[("Flag #2")]
-    flag_dmc2[("Flag #3")]
+    flag_csr[("Tag #1")]
+    flag_dmc1[("Tag #2")]
+    flag_dmc2[("Tag #3")]
     csr -.-> flag_csr
     dmc1 -.-> flag_dmc1
     dmc2 -.-> flag_dmc2
