@@ -206,7 +206,7 @@ This branching strategy would allow to work separately on each activity, keeping
 
 -   DMC #1: specific milestone happening soon
 
-Two issues are handled at the same moment. Issue #1 is dedicated to an efficacy endpoint that should not be part of the DMC, while Issue #2 is stricly dedicated to the DMC activity and will not be part of the final CSR outputs.
+Two issues are handled at the same moment. Issue #1 is dedicated to an efficacy endpoint that should not be part of the DMC, while Issue #2 is strictly dedicated to the DMC activity and will not be part of the final CSR outputs.
 
 ```{mermaid}
 %%| label: fig-milestone-branch-structure
