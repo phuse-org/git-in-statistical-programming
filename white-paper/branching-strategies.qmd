@@ -228,7 +228,7 @@ flowchart TD
 
 ### Common issue
 
-If something common to more than one of the main branches should be made, it is possible to make as much pull requests as requested. The only tricky part is to define the source branch. In this example, we take the CSR.
+If something common to more than one of the main branches should be made, it is possible to make as much pull requests as required. The only tricky part is to define the source branch. In this example, we take the CSR.
 
 ```{mermaid}
 %%| label: fig-common-issue-branch-structure
