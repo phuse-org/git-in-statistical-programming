@@ -321,7 +321,7 @@ flowchart TB
 
 Many other strategies can be defined, and the choice depends on the needs of each study team. Also, some of the strategies displayed above can be combined (for instance using a devel branch with a milestone main branch strategy).
 
-Here is a summary of the different pros and cons of the different strategies presented above:
+Here is a summary of the pros and cons of the different strategies presented above:
 
 +-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 | strategy                          | pros                                                                       | cons                                                                                                          |
