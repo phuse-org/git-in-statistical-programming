@@ -267,7 +267,7 @@ flowchart TB
 
 Hot fixes are urgent corrections that need to be applied to a specific milestone that has already been released or tagged. These fixes are typically critical bugs or issues discovered after a milestone has been finalized and need immediate attention.
 
-It should focus only on the **resolution** of the critical issue, and **prevent** it to happen again. It should be **clearly documented and tested**, even given the urgency of the fix.
+It should focus only on the **resolution** of the critical issue, and **prevent** it from happening again. It should be **clearly documented and tested**, even given the urgency of the fix.
 
 Hot fixes are essential for maintaining the integrity of released milestones while allowing development to continue on the main branch without disruption.
 
