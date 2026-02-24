@@ -194,7 +194,7 @@ Another way is to duplicate the main branch and use a flag to identify the miles
 
 ## One main branch per milestone
 
-A single study often needs to deal with different activities, sometime happening at the same moment. One potential way to use git in theses cases could be to have:
+A single study often needs to deal with different activities, sometimes happening concurrently. One potential way to use git in these cases could be to have:
 
 -   1 repository for the study
 
