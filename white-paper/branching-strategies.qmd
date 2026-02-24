@@ -2,7 +2,7 @@
 
 Defining a branching strategy can be tricky and requires identifying the needs of each repository. While there is no best branching strategy, this part provides a few examples of what could be considered as potential branching strategies.
 
-There is no need to define one single branching strategy for all of the repository of a company or institution. The choice should be made by type of activity.
+There is no need to define one single branching strategy for all of the repositories of a company or institution. The choice should be made by type of activity.
 
 ::: callout-tip
 ### About branches
