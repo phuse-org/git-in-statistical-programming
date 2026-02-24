@@ -72,8 +72,6 @@ It could potentially be used for a study or a product with several distinct acti
 
 A devel branch is usually a development branch located between the main and other specific development branches. It is used to integrate multiple features and updated before all of those are merged with the main branch. The main objective is to ensure stability of interdependent updates. It is possible that two different features, which work fine in separate branches, may cause conflicts when merged into the same branch. The devel branch is used to integrate all updated features and make any necessary final adjustments before merging into the main branch. It works as a safety net before the final merge to main.
 
-The figure below shows an example of the usage of the devel branch. The two feature branches are working without any problem separately, but removing ADAE.ARELGRP1 causes a conflict issue in the devel branch. This conflict should be resolved before merging into main.
-
 ```{mermaid}
 %%| echo: false
 %%| eval: false
