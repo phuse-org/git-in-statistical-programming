@@ -324,7 +324,7 @@ Many other strategies can be defined, and the choice depends on the needs of eac
 Here is a summary of the pros and cons of the different strategies presented above:
 
 +-----------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-| strategy                          | pros                                                                       | cons                                                                                                          |
+| Strategy                          | Pros                                                                       | Cons                                                                                                          |
 +===================================+============================================================================+===============================================================================================================+
 | **Devel branch**                  | -   Safety net before merging into main                                    | -   Not as instantaneous merge into main, takes more time                                                     |
 |                                   |                                                                            |                                                                                                               |
