@@ -125,6 +125,52 @@ flowchart TD
     linkStyle 7 stroke:#FF6600,stroke-width:3px
 ```
 
+```{mermaid}
+%%| label: fig-devel-branch-structure-2
+%%| fig-cap: "Devel branch structure with conflict resolution"
+flowchart TD
+    main["Main branch"]
+    devel(["Devel branch"])
+    feature-1("Feature 1:<br>Remove<br>ADAE.ARELGRP1")
+    feature-2("Feature 2:<br>Update ADSL<br>(still uses<br>ADAE.ARELGRP1)")
+    pr1>"Pull request #1"]
+    pr2>"Pull request #2"]
+    conflict["Conflict detected<br>after merging<br>both features"]
+    resolve>"Resolve conflicts<br>in devel branch"]
+    
+    main -->|"1. Create devel"| devel
+    devel -->|"2. Create"| feature-1
+    devel -->|"2. Create"| feature-2
+    feature-1 -->|"3. Merge"| pr1
+    feature-2 -->|"3. Merge"| pr2
+    pr1 -->|"4. Merge to devel"| devel
+    pr2 -->|"4. Merge to devel"| devel
+    devel -.->|"5. Conflict appears!"| conflict
+    conflict -.->|"6. Resolve"| resolve
+    resolve -.->|"7. Apply fix"| devel
+    devel ==>|"8. Merge to main<br>(conflict resolved)"| main
+    
+    classDef conflictBox fill:#FFE5E5,stroke-width:2px
+    classDef resolveBox fill:#FFF4E5,stroke-width:2px
+    classDef develBox fill:#E5F3FF,stroke-width:2px
+    
+    class conflict conflictBox
+    class resolve resolveBox
+    class devel develBox
+    
+    linkStyle 0 stroke:#0066FF,stroke-width:2px
+    linkStyle 1 stroke:#0066FF,stroke-width:2px
+    linkStyle 2 stroke:#0066FF,stroke-width:2px
+    linkStyle 3 stroke:#0066FF,stroke-width:2px
+    linkStyle 4 stroke:#0066FF,stroke-width:2px
+    linkStyle 5 stroke:#0066FF,stroke-width:2px
+    linkStyle 6 stroke:#0066FF,stroke-width:2px
+    linkStyle 7 stroke:#CC0000,stroke-width:3px,stroke-dasharray: 5 5
+    linkStyle 8 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 5 5
+    linkStyle 9 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 5 5
+    linkStyle 10 stroke:#FF6600,stroke-width:4px
+```
+
 A devel branch is very useful in the following cases:
 
 -   Several different people are working at the same time on different features
