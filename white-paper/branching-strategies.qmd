@@ -200,7 +200,7 @@ A single study often needs to deal with different activities, sometimes happenin
 
 -   **1 main branch per activity** (CSR, DMC #n, DSUR, etc)
 
-This branching strategy would allow to work separately on each activity, keeping them intact, but also to work on both at the same moment if needed. The following examples shows a repository dedicated to a single study with the 2 following main branches:
+This branching strategy would allow for working separately on each activity, keeping them intact, but also to work on both at the same moment if needed. The following examples shows a repository dedicated to a single study with the 2 following main branches:
 
 -   CSR: for daily ongoing activities related to the CSR preparation
 
