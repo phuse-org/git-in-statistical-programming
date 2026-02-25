@@ -188,7 +188,7 @@ flowchart TB
     end
 ```
 
-Several possibilities can be applied. The most common is to use a tag release on the main branch to identify the milestone. It will save the main branch and clearly identify it as a milestone reached. This link provides more details about [tagging releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository/managing-releases-in-a-repository) on GitHub. Similar actions can be performed on other source code management platforms.
+Several possibilities can be applied. The most common is to use a tag release on the main branch to identify the milestone. It will save the main branch and clearly identify it as a milestone reached. This link provides more details about [tagging releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on GitHub. Similar actions can be performed on other source code management platforms.
 
 Another way is to duplicate the main branch and use a flag to identify the milestone, with the possibility to lock it. A branch can be locked using a [protection rule (see #13)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule).
 
