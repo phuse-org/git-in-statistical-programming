@@ -239,11 +239,18 @@ flowchart TB
 
     branch-c("Common issue branch")
     prc>"Pull request"]
+    prd>"Pull request"]
 
     csr --> branch-c --> prc
-
+    branch-c -.-> prd    
     prc --> csr
-    prc --> dmc
+    prd -.-> dmc
+
+    linkStyle 0 stroke:#0066FF,stroke-width:2px
+    linkStyle 1 stroke:#0066FF,stroke-width:2px
+    linkStyle 2 stroke:#0066FF,stroke-width:2px
+    linkStyle 3 stroke:#FF6600,stroke-width:3px
+    linkStyle 4 stroke:#FF6600,stroke-width:3px
 ```
 
 ```{mermaid}
