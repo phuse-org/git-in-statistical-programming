@@ -177,6 +177,8 @@ A devel branch is very useful in the following cases:
 
 -   The features can present interdependencies
 
+In these cases, the devel branch will serve as a convergence point for the different features and reduce the integration time when merging into the main branch. The conflicts are detected early before being present into the main branch. A devel branch also reduce the risk of having late conflicts when features are merged late to main (everything is merged in devel first). Solving all conflicts in the devel branch will also make sure to have a clean main branch.
+
 In the case of a single individual or a small team working together, or when tasks have no interdependencies, the devel branch could be avoided.
 
 An example of workflow using a devel branch is detailled at [this link](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
