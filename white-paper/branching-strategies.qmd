@@ -185,7 +185,7 @@ An example of workflow using a devel branch is detailled at [this link](https://
 
 ## One main branch duplicated per milestone
 
-Several clinical studies relies on the same base programs for several milestone, while some milestones require some specific programs. Storing everything in the main branch and duplicate it for the final step of a milestone is an option.
+Across a clinical portfolio, multiple studies and milestones can share a common set of base programs, while some milestones require additional specific code. One approach is to store all programs in the main branch and create a dedicated copy when finalizing a milestone.
 
 ```{mermaid}
 %%| label: fig-dup-milestone-branch-structure
