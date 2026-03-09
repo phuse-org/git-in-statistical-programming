@@ -104,6 +104,7 @@ flowchart TD
     devel(["Devel branch"])
     feature-1("Feature 1 branch")
     feature-2("Feature 2 branch")
+    resolve["Resolve conflicts"]
     pr1>"Pull request"]
     pr2>"Pull request"]
     main --> devel
@@ -113,7 +114,9 @@ flowchart TD
     feature-2 -.-> pr2
     pr1 --> devel
     pr2 -.-> devel
-    devel ==> |"Resolve conflicts"| main
+    devel --> resolve
+    resolve -->|"Resolve conflicts"| devel
+    devel ==>|"Merge to main"| main
     
     linkStyle 0 stroke:#0066FF,stroke-width:2px
     linkStyle 1 stroke:#0066FF,stroke-width:2px
@@ -122,7 +125,9 @@ flowchart TD
     linkStyle 4 stroke:#0066FF,stroke-width:2px
     linkStyle 5 stroke:#0066FF,stroke-width:2px
     linkStyle 6 stroke:#0066FF,stroke-width:2px
-    linkStyle 7 stroke:#FF6600,stroke-width:3px
+    linkStyle 7 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 10 5
+    linkStyle 8 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 10 5
+    linkStyle 9 stroke:#FF6600,stroke-width:4px
 ```
 
 ```{mermaid}
@@ -166,8 +171,8 @@ flowchart TD
     linkStyle 5 stroke:#0066FF,stroke-width:2px
     linkStyle 6 stroke:#0066FF,stroke-width:2px
     linkStyle 7 stroke:#CC0000,stroke-width:3px,stroke-dasharray: 5 5
-    linkStyle 8 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 5 5
-    linkStyle 9 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 5 5
+    linkStyle 8 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 8 4
+    linkStyle 9 stroke:#FF6600,stroke-width:3px,stroke-dasharray: 8 4
     linkStyle 10 stroke:#FF6600,stroke-width:4px
 ```
 
