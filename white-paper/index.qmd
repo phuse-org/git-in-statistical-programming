@@ -1,4 +1,52 @@
 # Introduction
 
-This is a draft of the white paper for the phuse working group Git in Statistical Programming
+This white paper examines the use of Git in clinical reporting, with a particular focus on statistical programming activities in the pharmaceutical and biotech industries. It has been developed by the PHUSE Working Group “Use of Git in Statistical Programming” and is intended for statisticians, statistical programmers, data scientists, and related roles involved in the design, execution, and oversight of clinical reporting workflows.
+
+Git is now the de facto standard version control system in software engineering, but its adoption within regulated clinical reporting environments is still emerging. This paper explores how Git can be used effectively and responsibly in that context.
+
+# Scope
+
+The scope of this white paper is the practical use of Git in clinical reporting processes, including but not limited to:
+
+- Programming of analysis datasets and tables, listings, and figures (TLFs)
+- Quality control and verification workflows
+- Auditability, traceability, and validation considerations
+- Collaboration across internal teams and external partners
+
+The paper does not aim to be a general Git tutorial or a complete user guide. Many excellent resources already exist to learn Git from first principles; where appropriate, we will reference selected materials rather than reproduce them.
+
+Different organizations are at different stages of Git adoption and may operate under distinct regulatory interpretations, infrastructure constraints, and legacy tooling. For that reason, this paper avoids prescribing a single “right” way to use Git. Instead, it highlights:
+
+- Multiple viable approaches that organizations are currently using
+- The trade‑offs associated with those approaches
+- Key considerations to support informed decision‑making when adopting or scaling Git
+
+In addition to Git as a version control system, we discuss Git‑based repository platforms such as GitHub, GitLab, and similar tools. These platforms provide additional capabilities for collaboration, automation, and governance on top of Git. While we describe representative features and usage patterns, we do not endorse specific products; most platforms offer broadly comparable core functionality, with differences in implementation and ecosystem.
+
+# Git as a technology
+
+Git is an open source version control system originally created by Linus Torvalds. It was first released in 7 April 2005. It's design focuses on speed, data integrity, and the ability to support distributed workflows.
+
+Primarily developed as a tool for Linux, Git is available in all operating systems.  Git is fundamentally a command‑line tool, but many graphical interfaces and integrations are available, including within commonly used integrated development environments.
+
+Git has proved to be extremely popular in Software development. The [2022 Stack Overflow developer survey](https://survey.stackoverflow.co/2022/#version-control-version-control-system) found that 93.87% of responders used Git as their primary version control tool.
+
+One core idea in Git is that it exists as a stand alone tool which can be used locally; if you have Git installed on your local computer you have all you need to track a particular folder over time. Git makes snapshots at the users request of the state of the folder at a given time. When these snapshots are made, and what they include, is entirely user driven.
+
+Over time users build a collection of snapshots (commits) of their folder, which is easy to navigate and revert to if needed. To learn more about Git, you can read the [Git manual](https://git-scm.com/about).
+
+Some of the biggest challenges for using Git for larger projects can be
+
+- Adopting good practice. Git does not enforce any behaviours, so it is up to organisations to design processes to use Git well.
+- Collaborating with larger teams. Git, and the code repositories that support Git, have many tools for enabling effective collaboration, but it can be easy to cause issues if you do not follow best practice. 
+- Fixing issues. For new Git users, when things go wrong it can be intimidating to fix the problems. In practice, the solution is never as complex as it looks, but for a beginner it can be hard to work out what the solution might be.
+
+This white paper will look at recommendations for all these issues, specifically in the context of clinical reporting. 
+
+# Git in the industry
+
+Within the pharmaceutical industry, and particularly in clinical reporting, Git is still relatively new. Individual developers and teams have been using Git for some time, but systematic integration of Git into validated clinical reporting workflows is only now becoming more common. 
+
+This white paper reflects an early effort to document how Git is being used today and how it might be used in the future across our industry. We anticipate that best practices will continue to evolve as organizations gain experience, tooling matures, and regulatory expectations become clearer. Consequently, we view this paper as a living document that may be updated over time to incorporate new insights, patterns, and lessons learned.
+
 
