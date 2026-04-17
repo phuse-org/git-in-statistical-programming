@@ -1,0 +1,36 @@
+---
+title: "GitHub and Gitlab"
+subtitle: "Comparing different solutions for accessing Git"
+author: "Kieran Martin"
+date: "2025-09-04"
+categories: [tools, github, gitlab]
+image: "thumb.png"
+# grid:
+#   sidebar-width: 050px
+#   body-width: 1200px
+#   margin-width: 250px
+#   gutter-width: 1.5rem
+toc: TRUE
+toc-title: "Table of contents"
+toc-depth: 5
+---
+
+# Introduction
+
+Users of Git will typically want to have a shared repository where they can collaborate with other users. Fortunately, there are excellent solutions for this. In this post I will take a look at two popular tools for this, Gitlab and Github. Other solutions definitely exist, such as
+
+- BitBucket
+- OneDev
+- Gogs
+- Codeberg
+- Radicle
+- Gitea
+
+And many more.
+
+Note that the aim of this post is try to provide a dispassionate comparison without providing any recommendations; the information in this article is correct to the best of my knowledge and is based on available documentation. Please raise an issue if you spot any inaccuracies.
+
+# What is the purpose of a code repository server
+
+Both Github and Gitlab function primarily as a central repository for Git repositories. 
+
