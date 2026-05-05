@@ -22,6 +22,13 @@ Organizational culture also plays a significant role. Statistical programmers of
 *Git documentation online can be realy long and complex. Write down the basics at firs (main, sub-branches, commits, push, pull request, merge).*
 :::
 
+## Introduce tools
+
+::: callout-caution
+*Do not talk a lot about in line Git commands and show one or two software that can help (GitHub Desktop, VSCode, etc). Give command line equivalent to each actions (commit, push, etc).*
+*For VSCode, since a lot of people are using SAS, RStudio or Positron, explain how to use it only for Git (or how to switch).*
+:::
+
 ## Make people use Git as a training
 
 ::: callout-caution
