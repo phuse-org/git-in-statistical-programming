@@ -19,6 +19,10 @@ format:
   html:
     theme: cosmo
     css: styles.css
-
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 200px
+      gutter-width: 0.5rem
 
 
