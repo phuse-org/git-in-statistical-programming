@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - state.qmd
+    - benefits.qmd
     - Challenges.qmd
     - part: "Recommendations"
       chapters:
