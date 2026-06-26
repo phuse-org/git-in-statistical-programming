@@ -1,3 +1,42 @@
+# Benefits
+
+## Introduction
+
+Statistical programmers in the pharmaceutical industry operate in a highly regulated environment where validated, reproducible analysis is paramount. For several years, the standard workflow has revolved around statistical computing environments managed through shared network drives, strict naming conventions, and manual version control practices (saving files with incremental version numbers or descriptive suffixes before archiving) or with regular server backups. These habits, while informal, have been deeply embedded in day-to-day practice and have served as the de facto audit trail in many organizations.
+
+Introducing Git into this context presents a unique set of challenges that go beyond mere tool adoption. It relies on notions such as sub-branches linked to a main branch, commits, remote repositories and merges, that can be difficult to adopt for teams used to work in other environments. The learning curve can be difficult and requires to embrace a more collaborative and transparent workflow.
+
+Furthermore, the regulatory framework of the pharmaceutical industry is strict. Any change management system touching analysis code or submission-relevant outputs must be set in a GxP environment. Git must be used in a way that ensures theses compliances (traceability, audit, etc).
+
+Organizational culture also plays a significant role. Statistical programmers often work independently or in small teams with well-established personal workflows. Moving to a Git focused workflow requires not only technical training, but to being open to new mindsets and ways of working.
+
+## Benefits of Git for statistical programmers
+
+One important lesson from companies that have already experienced the transition to using Git is that, because Git can be a challenging technology to adopt at first, it can be easy to lose sight as to why this change is being made.
+
+To combat this difficulty, we recommend highlighting early and often the benefits of adopting Git in practice. These are covered in more detail in the chapter 
+
+## Prepare basic documentation
+
+::: callout-caution
+*Git documentation online can be realy long and complex. Write down the basics at firs (main, sub-branches, commits, push, pull request, merge).*
+:::
+
+## Introduce tools
+
+::: callout-caution
+*Do not talk a lot about in line Git commands and show one or two software that can help (GitHub Desktop, VSCode, etc). Give command line equivalent to each actions (commit, push, etc).*
+*For VSCode, since a lot of people are using SAS, RStudio or Positron, explain how to use it only for Git (or how to switch).*
+:::
+
+## Make people use Git as a training
+
+::: callout-caution
+*Do not demonstrate, make people use Git with small examples: make an update on a file, review a PR, read commit history, etc.*
+:::
+
+
+
 #Benefits
 
 ## Introduction
