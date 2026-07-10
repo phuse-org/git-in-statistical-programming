@@ -12,7 +12,7 @@ Organizational culture also plays a significant role. Statistical programmers of
 
 ## The Change Curve
 
-The Change Curve is a well known model for understanding how employees resond to change @HOLDSWORTH2024254. While there are many different implementations of it, generally speaking it is understood to be split into two main phases, first of resistance and then of acceptance. An important attitude in any company trying to make any sort of change, be it organisational or technological, is to have empathy for those individuals who are experiencing it, and give them the support they need.
+The Change Curve is a well known model for understanding how employees respond to change @HOLDSWORTH2024254. While it has many different forms, it generally begins with initial shock, followed by resistance, low morale, gradual experimentation, and then acceptance and integration. An important consideration for any company trying to make any significant change, be it organisational or technological, is to have empathy for those individuals who are experiencing it and give them the support they need.
 
 We must understand that any change will take time to embed into an organisation, and the main thing we can influence is how fast that change goes, and how well we can adopt the technology.
 
