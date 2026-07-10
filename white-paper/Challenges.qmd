@@ -4,7 +4,7 @@
 
 Statistical programmers in the pharmaceutical industry operate in a highly regulated environment where validated, reproducible analysis is paramount. Historically, the standard workflow revolved around statistical computing environments managed through shared network drives, strict naming conventions, and manual version control practices (saving files with incremental version numbers or descriptive suffixes before archiving) or with regular server backups. These habits, while informal, have been deeply embedded in day-to-day practice and have served as the de facto audit trail in many organizations.
 
-Introducing Git into this context presents a unique set of challenges that go beyond mere tool adoption. It relies on notions such as sub-branches linked to a main branch, commits, remote repositories and merges, that can be difficult to adopt for teams used to work in other environments. The learning curve can be difficult and requires to embrace a more collaborative and transparent workflow.
+Introducing Git into this context presents a unique set of challenges that go beyond mere tool adoption. It relies on notions such as sub-branches linked to a main branch, commits, remote repositories and merges, that can be difficult to adopt for teams used to working in other environments. The learning curve can be difficult and requires embracing a more collaborative and transparent workflow.
 
 Furthermore, the regulatory framework of the pharmaceutical industry is strict. Any change management system touching analysis code or submission-relevant outputs must be set in a GxP environment. Git must be used in a way that ensures theses compliances (traceability, audit, etc).
 
