@@ -16,7 +16,7 @@ The Change Curve is a well known model for understanding how employees respond t
 
 We must understand that any change will take time to embed into an organisation, and the main thing we can influence is how fast that change goes, and how well we can adopt the technology.
 
-In this chapter we will mostly ignore the how of using Git within your company (for more, please see the [recommendations](recommendations.qmd) chapter), and look instead about the things you can do to support your team as they learn to adopt Git in practice. 
+In this chapter, we will largely set aside the specifics of how Git is used within your organization (for more, please see the [recommendations](recommendations.qmd) chapter). Instead, we will focus on the ways you can support your team as they learn to adopt Git in their day-to-day work.
 
 ## Benefits of Git for statistical programmers
 
