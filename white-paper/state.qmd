@@ -22,7 +22,7 @@ As described in the 2024 Phuse Paper @{Martin24}, Roche has integrated Git into 
 
 ## Sanofi
 
-Git adoption is currently in a transitional phase. While Git is not yet routinely used for clinical study deliverables, it has already established a solid foothold in supporting activities: it underpins the development of internal packages used across the SDTM, ADaM, and TL&F workflows, and serves as the backbone for technical documentation, maintained through dedicated repositories and associated websites. This existing usage demonstrates a growing familiarity with Git-based workflows within the statistical programming community.
+Git adoption is currently in a transitional phase. While Git is not yet routinely used for clinical study deliverables, it has already established a solid foothold in supporting activities: it underpins the development of internal packages used across the SDTM, ADaM, and TFL workflows, and serves as the backbone for technical documentation, maintained through dedicated repositories and associated websites. This existing usage demonstrates a growing familiarity with Git-based workflows within the statistical programming community.
 
 Building on this foundation, a dedicated team is actively preparing the broader transition of clinical studies to Git — addressing key integration points with the company's statistical computing environment, and developing end-user documentation and training materials to support adoption at scale. The year 2026 is set to mark a turning point, with pilot clinical studies expected to be fully integrated with Git, accompanied by a structured change management program to ensure a smooth and sustainable shift across the organization.
 
