@@ -45,7 +45,7 @@ There are a number of excellent resources for learning Git online. This means th
 
 Your documentation should focus first on the ways someone will work in their day to day, covering the typical flow and where possible integrating it into the tools they are likely to use. Documentation should be easy to access and use, and easy to search. We recommend where possible to not include this level of documentation in GxP training, as the latter is likely to be in systems that can be harder to update quickly based on user feedback.
 
-GxP training is of course important to meet our compliance requirements, but we can normally build training on top of it which enables more dyanmic updates as you get feedback from users on what works and what does not. 
+GxP training is of course important to meet our compliance requirements, but we can normally build training on top of it which enables more dynamic updates as you get feedback from users on what works and what does not. 
 
 ### Failure cases
 
