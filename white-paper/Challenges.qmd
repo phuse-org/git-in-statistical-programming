@@ -49,7 +49,7 @@ GxP training is of course important to meet our compliance requirements, but we 
 
 ### Failure cases
 
-An important resource to build over time is how to resolve issues that might occur when using Git. The exact nature of the issues are likely to run into will be specific to your organisations workflow but some likely common issues are
+An important resource to build over time is how to resolve issues that might occur when using Git. The exact nature of the issues users are likely to run into will be specific to your organisation's workflow but some likely common issues are
 
 - Merge conflicts and how to resolve them smoothly
 - Undoing things (git reset and revert)
