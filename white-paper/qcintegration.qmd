@@ -1,5 +1,117 @@
 # QC Process and Git
 
-This chapter will discuss the QC process and how teams might interact with that using Git.
+## Introduction
 
+This chapter describes how Git can support quality control (QC) activities in clinical statistical programming. Git provides a traceable history of code changes and enables structured peer review through branches, commits, pull requests, and approvals.
 
+Git supports the QC process but does not replace independent validation, output comparison, controlled specifications, or organizational procedures when these activities are required.
+
+## Create a Working Branch
+
+The production programmer creates a branch from the appropriate development or main branch.
+
+For example:
+
+```text
+feature/ADLB-laboratory-parameters
+```
+
+Using a separate branch allows changes to be developed and tested without directly affecting the approved code.
+
+## Develop and Commit Changes
+
+The programmer updates the necessary code, tests, specifications, and documentation. Changes should be divided into logical commits with clear messages.
+
+For example:
+
+```text
+Add ADLB laboratory parameter derivations
+```
+
+Each commit should describe the purpose of the change.Commit messages such as "updates," "changes," or "fix" should be avoided because they provide limited traceability. Restricted clinical data, passwords, and access tokens should not be committed to the repository.
+
+## Perform Programmer Self-Review
+
+Before requesting QC review, the programmer should confirm that:
+
+- The program runs successfully.
+- The code follows project standards.
+- The results match the specification.
+- Required tests and comparisons pass.
+- Logs contain no unexpected errors or warnings.
+- Temporary or debugging code has been removed.
+- Only intended files have been changed.
+- Specifications and documentation have been updated when applicable.
+
+## Open a Pull Request
+
+The programmer opens a pull request to merge the working branch into the appropriate target branch.
+
+The pull-request description should include:
+
+- A summary and purpose of the change.
+- The affected programs or deliverables.
+- A link to the associated issue, ticket, or specification.
+- The testing completed.
+- Any assumptions, limitations, or known issues.
+
+The pull request provides a central location for reviewing the code and documenting the QC discussion.
+
+## Perform QC Review
+
+The reviewer examines the changes in the pull request and confirms, as applicable:
+
+- The code follows the approved requirement or specification.
+- Derivations and conditions are correct.
+- Records are included and excluded appropriately.
+- Joins do not introduce duplicates or unintended records.
+- Variable attributes and controlled terminology are correct.
+- Missing values and special cases are handled correctly.
+- Appropriate tests have been added or updated.
+- No unrelated or restricted information is included.
+
+Review comments should identify the location of the issue, explain why a change is needed, and provide a clear recommendation when possible.
+
+A pull-request review supports code QC, but it should not automatically replace independent programming or output validation when those activities are required by the QC plan.
+
+## Resolve QC Comments and Retest
+
+The production programmer addresses the review comments and pushes the updated code to the same branch. The reviewer then verifies each resolution.
+
+After making changes, the programmer should rerun the relevant:
+
+- Unit and integration tests.
+- Dataset or output comparisons.
+- Log reviews.
+- Duplicate and record-count checks.
+
+If a review comment is not implemented, the reason should be documented.
+
+## Approve and Merge
+
+The reviewer approves the pull request after:
+
+- All required comments have been resolved.
+- Automated checks have passed.
+- Required validation has been completed.
+- Specifications and documentation are current.
+- The change meets the acceptance criteria.
+
+After approval, an authorized team member merges the pull request into the target branch. Repository protections may be used to prevent direct changes to the main branch and require successful checks and reviewer approval before merging.
+
+## Retain QC Evidence
+
+Git and the repository platform can retain useful QC evidence, including:
+
+- Commit and merge history.
+- Pull-request descriptions.
+- Review comments and responses.
+- Reviewer approvals.
+- Automated test results.
+- Links to issues, specifications, and releases.
+
+The organization should define which records constitute formal QC evidence and how they must be retained.
+
+## Conclusion
+
+Git supports QC by providing transparent code changes, structured peer review, documented issue resolution, and integration with automated testing. However, Git is only one part of the overall QC framework and should be used together with the required validation procedures, specifications, and quality controls.
