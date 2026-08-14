@@ -35,7 +35,7 @@ All of these are very easy to show quite quickly, and should not be forgotten wh
 
 Depending on your company's size and how they want to use Git, there a number of tools to interact with Git and Github. These are covered more in the [appendix](tools.qmd), but your decision is likely to be motivated based on how close you want users to interact with Git.
 
-You may decide that you wish to abstract users access to Git or you might decide that you wish to get users comfortable with direct Git terminal access. Different tools will enable different approaches.
+You may choose to hide Git's complexity from users by giving them easy-to-use tools, or you may choose to teach users to work directly with Git commands in the terminal. The tools you select will influence which approach is possible.
 
 Note that of course you are not limited to using any one tool, and can make multiple available to support different workflows and different levels of ability in your user base. The important thing when it comes to managing change is to make it clear to individuals what tools are for, and when they are using them. For consistency, it may be wise to limit teams that work together to at most two common tools. 
 
