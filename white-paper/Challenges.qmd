@@ -64,7 +64,7 @@ When teaching users to use Git, we should always focus on practical examples whi
 
 Where possible trainings should be live, and in person if it is possible to arrange, to allow maximum engagement.
 
-One vital aspect is that training should be targetted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge atrophying during use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
+One vital aspect is that training should be targetted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge deteriorating prior to use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
 
 ## Feedback and checking in
 
