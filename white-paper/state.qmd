@@ -8,6 +8,16 @@ Astex Pharmaceuticals have introduced Git into their bioinformatics/statistics d
 
 The guide acknowledges the common points of confusion for new users at each step — including SSH key setup, branch naming conventions, selective staging, amending commits, resolving merge conflicts, and understanding the sequencing of merge, pull, and push operations. 
 
+## Atorus Research
+
+Atorus Research uses Git to support collaborative development of R programs and packages. For R development, Git operations can be performed through the RStudio Git pane or via terminal. Developers begin by pulling the latest changes from the main branch of the remote repository. A new, short-lived branch is then created for a specific enhancement, issue, or programming change, and is linked to the relevant issue or change ticket to maintain traceability.
+
+ The required code changes are developed and tested within the local project. Programmers review the differences before staging, committing, and pushing their changes to the remote repository. A pull request is created to merge the completed changes into the main branch. The main branch is protected, and changes can only be merged through an approved pull request. 
+ 
+ Automated CI/CD checks run on the pull request, and the code is reviewed and approved by someone other than the author. Completed branches are deleted after merging. This workflow provides clear version history, supports collaboration, attributes changes to individual contributors, and allows previous versions to be restored when needed.
+
+
+
 ## Novartis
 
 Novartis have been looking to adopt Git as the backbone for version control in their new SCE. To reduce the burden for programmers adopting a environment and Git setup at the same time, much of the flow has been abstracted. They use a Git strategy of release - stage/feature and dev/flfeature + dev/qcfeature.
