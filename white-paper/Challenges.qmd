@@ -4,9 +4,9 @@
 
 Statistical programmers in the pharmaceutical industry operate in a highly regulated environment where validated, reproducible analysis is paramount. Historically, the standard workflow revolved around statistical computing environments managed through shared network drives, strict naming conventions, and manual version control practices (saving files with incremental version numbers or descriptive suffixes before archiving) or with regular server backups. These habits, while informal, have been deeply embedded in day-to-day practice and have served as the de facto audit trail in many organizations.
 
-Introducing Git into this context presents a unique set of challenges that go beyond mere tool adoption. It relies on notions such as sub-branches linked to a main branch, commits, remote repositories and merges, that can be difficult to adopt for teams used to working in other environments. The learning curve can be difficult and requires embracing a more collaborative and transparent workflow.
+Introducing Git into this context presents a unique set of challenges that go beyond mere tool adoption. It introduces concepts such as branches, commits, remote repositories, pull requests, and merges that may be unfamiliar to teams accustomed to other environments. The learning curve can be difficult and requires embracing a more collaborative and transparent workflow.
 
-Furthermore, the regulatory framework of the pharmaceutical industry is strict. Any change management system touching analysis code or submission-relevant outputs must be set in a GxP environment. Git must be used in a way that ensures compliance (traceability, audit, etc).
+Furthermore, the regulatory framework of the pharmaceutical industry is strict. When Git is used as part of a process that creates or manages regulated records, its intended use and applicable GxP requirements should be defined through the organization’s quality system and a documented, risk-based assessment. Appropriate controls may include access management, traceability, review and approval, record retention, backup, and protection against unauthorized changes. 
 
 Organizational culture also plays a significant role. Statistical programmers often work independently or in small teams with well-established personal workflows. Moving to a Git-focused workflow requires not only technical training, but to being open to new mindsets and ways of working.
 
@@ -33,7 +33,7 @@ All of these are very easy to show quite quickly, and should not be forgotten wh
 
 ## Introducing tools
 
-Depending on your company's size and how they want to use Git, there a number of tools to interact with Git and Github. These are covered more in the [appendix](tools.qmd), but your decision is likely to be motivated based on how close you want users to interact with Git.
+Depending on your company's size and how they want to use Git, there are a number of tools to interact with Git and Github. These are covered more in the [appendix](tools.qmd), but your decision is likely to be motivated based on how close you want users to interact with Git.
 
 You may decide that you wish to abstract users access to Git or you might decide that you wish to get users comfortable with direct Git terminal access. Different tools will enable different approaches.
 
@@ -51,9 +51,11 @@ GxP training is of course important to meet our compliance requirements, but we 
 
 An important resource to build over time is how to resolve issues that might occur when using Git. The exact nature of the issues are likely to run into will be specific to your organisations workflow but some likely common issues are
 
-- Merge conflicts and how to resolve them smoothly
-- Undoing things (git reset and revert)
-- Not being able to switch brances (git stash)
+- Merge conflicts and how to resolve them safely
+- Reverting a change in shared history using git revert
+- Rewriting unshared local history using git reset, with appropriate caution
+- Handling uncommitted changes before switching branches using git stash or a work-in-progress commit
+- Resolving authentication and repository-permission issues
 
 Having simple, easy to understand guides to help in these cases can be very useful. These are things that can be taught, but don't come up frequently enough for the knowledge to necessarily be embedded, so having clear instructions on these can greatly improve Git adoption.
 
@@ -64,7 +66,7 @@ When teaching users to use Git, we should always focus on practical examples whi
 
 Where possible trainings should be live, and in person if it is possible to arrange, to allow maximum engagement.
 
-One vital aspect is that training should be targetted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge atrophying during use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
+One vital aspect is that training should be targeted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge atrophying during use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
 
 ## Feedback and checking in
 
@@ -76,4 +78,4 @@ When you do make changes based on feedback, make sure you communicate them clear
 
 ## Conclusion
 
-Any kind of change can have large impacts on an organisation, and Git as a technology can definitely cause some friction. Just like with all changes, provided it is handed well and responsively, then within a few years the use of Git will simply be the new normal. 
+Any kind of change can have large impacts on an organisation, and Git as a technology can definitely cause some friction. When the transition is handled well and supported in a responsive way, Git can become a routine and sustainable part of the statistical programming workflow.
