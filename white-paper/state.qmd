@@ -12,7 +12,7 @@ The guide acknowledges the common points of confusion for new users at each step
 
 Novartis have been looking to adopt Git as the backbone for version control in their new SCE. To reduce the burden for programmers adopting a environment and Git setup at the same time, much of the flow has been abstracted. They use a Git strategy of release - stage/feature and dev/flfeature + dev/qcfeature.
 
-Only dev branches are unprotected, and first line and QC are seperated (where double programming is required) only merging into the protected stage/feature branch, where, after checking for quality, they are merged to main.
+Only dev branches are unprotected, and first line and QC are separated (where double programming is required) only merging into the protected stage/feature branch, where, after checking for quality, they are merged to main.
 
 This process is controlled via tooling designed to create and manage branches, and making use of Domino's in built Git features which simplify user interaction with Git. The aim is to try to avoid complexities as much as possible, while still gaining the benefits of tracking evidence of quality control via pull requests.
 
