@@ -35,7 +35,7 @@ All of these are very easy to show quite quickly, and should not be forgotten wh
 
 Depending on your company's size and how they want to use Git, there are a number of tools to interact with Git and Github. These are covered more in the [appendix](tools.qmd), but your decision is likely to be motivated based on how close you want users to interact with Git.
 
-You may decide that you wish to abstract users access to Git or you might decide that you wish to get users comfortable with direct Git terminal access. Different tools will enable different approaches.
+You may choose to hide Git's complexity from users by giving them easy-to-use tools, or you may choose to teach users to work directly with Git commands in the terminal. The tools you select will influence which approach is possible.
 
 Note that of course you are not limited to using any one tool, and can make multiple available to support different workflows and different levels of ability in your user base. The important thing when it comes to managing change is to make it clear to individuals what tools are for, and when they are using them. For consistency, it may be wise to limit teams that work together to at most two common tools. 
 
@@ -45,11 +45,11 @@ There are a number of excellent resources for learning Git online. This means th
 
 Your documentation should focus first on the ways someone will work in their day to day, covering the typical flow and where possible integrating it into the tools they are likely to use. Documentation should be easy to access and use, and easy to search. We recommend where possible to not include this level of documentation in GxP training, as the latter is likely to be in systems that can be harder to update quickly based on user feedback.
 
-GxP training is of course important to meet our compliance requirements, but we can normally build training on top of it which enables more dyanmic updates as you get feedback from users on what works and what does not. 
+GxP training is of course important to meet our compliance requirements, but we can normally build training on top of it which enables more dynamic updates as you get feedback from users on what works and what does not. 
 
 ### Failure cases
 
-An important resource to build over time is how to resolve issues that might occur when using Git. The exact nature of the issues are likely to run into will be specific to your organisations workflow but some likely common issues are
+An important resource to build over time is how to resolve issues that might occur when using Git. The exact nature of the issues users are likely to run into will be specific to your organisation's workflow but some likely common issues are
 
 - Merge conflicts and how to resolve them safely
 - Reverting a change in shared history using git revert
@@ -66,7 +66,11 @@ When teaching users to use Git, we should always focus on practical examples whi
 
 Where possible trainings should be live, and in person if it is possible to arrange, to allow maximum engagement.
 
+<<<<<<< HEAD
 One vital aspect is that training should be targeted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge atrophying during use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
+=======
+One vital aspect is that training should be targetted only at individuals who are going to be adopting the Git workflow very soon, or who are already adopting it. This means that what they have learnt can be applied straight away, removing the danger of knowledge deteriorating prior to use. Related to this, if you can train cohorts of users who will be working together, this can be very useful as they will be able to learn and practice together. 
+>>>>>>> 3e895e7f708c7ab71dac837093e566cb44c898b4
 
 ## Feedback and checking in
 
