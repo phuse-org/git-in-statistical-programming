@@ -1,0 +1,5 @@
+# Benefits
+
+## Introduction
+
+This chapter aims to include at a high level some benefits for using Git in clinical development.
