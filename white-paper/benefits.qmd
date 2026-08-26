@@ -2,4 +2,22 @@
 
 ## Introduction
 
-This chapter aims to include at a high level some benefits for using Git in clinical development.
+More than a control version system, Git is can be a true accelerator for statistical programming teams and a vector of quality improvement, especially with its abilities to make collaboration easier and more traceable.
+
+## How AI can be used with Git
+
+An AI agent can become a real assistant to the statistical programmer in a less risky approach. Using an AI agent inside of Git will allow statistical programmers to have a clear view on the updates made to the code via the Git history. It is really useful when several programs have to be updated (for instance, in the case of a version change in a sponsor's standard) and give user confidence in the agent. Git can be used in this case as a code review tool. Without Git, tracking the changes can easilly become more difficult.
+
+## Security scanning
+
+::: callout-important
+(I need help for this part.)
+:::
+
+## Actions and CI/CD integration
+
+Using Git in association with a code hosting platform (GitHub, GitLab, Bitbucket, etc.) allows an easy integration of specific actions and CI/CD pipelines that can work automatically on specific cases (pushing a branch, creating a pull request, etc). It means statistical programmers do not need anymore to run manually programs (for instance a batch list of ADaM datasets, then one for all of the QC, etc).
+
+## History of commits
+
+As mentionned previously, Git is made to have an history of changes in the code of a project. But these changes are not here only for the author of each specific part of the code. It is really useful for the entire team to understand how to code has evolved. In the case of a long duration clinical study, it is important to easilly understand the changes in the code (methodology addition of new variables, etc). In this way, Git is a great tool to keep track of all changes along the way of a project.
