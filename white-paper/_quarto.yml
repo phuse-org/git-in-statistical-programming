@@ -5,6 +5,7 @@ book:
   title: "Git in Statistical Programming"
   author: 
       - "Kieran Martin"
+      - "Alex Assuied"
   date: "5/22/2025"
   chapters:
     - index.qmd
