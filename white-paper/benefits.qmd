@@ -2,7 +2,31 @@
 
 ## Introduction
 
-More than a control version system, Git is can be a true accelerator for statistical programming teams and a vector of quality improvement, especially with its abilities to make collaboration easier and more traceable.
+More than a control version system, Git is can be a true accelerator for statistical programming teams and a vector of quality improvement, especially with its abilities to make collaboration easier and more traceable. It also improves the readability and tracability, so as the usage of automatic actions (CI/CD pipelines) and AI agents.
+
+```{mermaid}
+%%| label: fig-git-benefits
+%%| fig-cap: "Overview of Git benefits"
+flowchart TD
+    git["Git"]
+
+    ai["AI-assisted<br/>code changes"]
+    sec["Security<br/>scanning"]
+    cicd["CI/CD<br/>automation"]
+    hist["Commit<br/>history"]
+    view["Shared code<br/>&amp; searchability"]
+
+    git --> ai
+    git --> sec
+    git --> cicd
+    git --> hist
+    git --> view
+
+    ai -->|"reviewed via diff / log"| trust["Confidence in<br/>AI-driven changes"]
+    cicd -->|"no manual batch runs"| efficiency["Time saved"]
+    hist -->|"traceability over time"| understanding["Team understands<br/>code evolution"]
+    view -->|"no restricted access request"| collab["Easier sharing<br/>&amp; reproducibility"]
+```
 
 ## How AI can be used with Git
 
@@ -21,3 +45,13 @@ Using Git in association with a code hosting platform (GitHub, GitLab, Bitbucket
 ## History of commits
 
 As mentionned previously, Git is made to have an history of changes in the code of a project. But these changes are not here only for the author of each specific part of the code. It is really useful for the entire team to understand how to code has evolved. In the case of a long duration clinical study, it is important to easilly understand the changes in the code (methodology addition of new variables, etc). In this way, Git is a great tool to keep track of all changes along the way of a project.
+
+## View of all code & searchability
+
+Even if the folder structure is not the same depending on the sponsor, Git allow to have a clear view of all the code inside a project. Especially when a Git repository is hosted on a platform, and because a Git project should not contain any data. It means that every statistical programmer could have the possibility to view the code of each project. This can be really useful to share and reproduce code, rather than having to request of restricted access to an SCE folder.
+
+::: callout-important
+Not sure to understand what we're talking about here. Anyhow the folders structure depends of each sponsor.
+:::
+
+
