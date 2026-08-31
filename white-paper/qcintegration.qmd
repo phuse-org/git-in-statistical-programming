@@ -4,7 +4,7 @@
 
 This chapter describes how Git can support quality control (QC) activities in clinical statistical programming. Git provides a traceable history of code changes and enables structured peer review through branches, commits, pull requests, and approvals.
 
-Git supports the QC process but does not replace independent validation, output comparison, controlled specifications, or organizational procedures when these activities are required.
+The workflow described in this chapter is one suggested approach for integrating Git into an existing QC process. It should be adapted to the organization’s procedures, risk-based QC strategy, technology, and applicable regulatory requirements. Git supports the QC process but does not replace independent validation, output comparison, controlled specifications, or organizational procedures when these activities are required.
 
 ## Create a Working Branch
 
@@ -56,6 +56,20 @@ The pull-request description should include:
 - Any assumptions, limitations, or known issues.
 
 The pull request provides a central location for reviewing the code and documenting the QC discussion.
+
+## Optional AI-Assisted Pre-QC
+
+Where approved by the organization, AI-assisted tools such as GitHub Copilot can be used to provide an initial review of code changes before the formal QC review. Teams can add their programming and review standards to `.github/copilot-instructions.md`. More detailed checks can also be documented in a review-specific skill, such as `.github/skills/code-review/SKILL.md`.
+
+For example, the AI-assisted review could check for:
+
+- Differences between variable names used in the code and the approved specifications or metadata.
+- Compliance with sponsor or project programming standards.
+- Missing or insufficient tests.
+- Joins that could create duplicate or unexpected records.
+- Credentials, restricted data, or other sensitive information included by mistake.
+
+The review can be requested when a pull request is opened and repeated when additional changes are pushed. Any findings should be reviewed by a qualified programmer because AI suggestions may not always be correct or complete. AI-assisted review should support, rather than replace, human code review, independent validation, and required approvals. Teams should use only organization-approved tools and follow their established confidentiality, security, and data-governance requirements.
 
 ## Perform QC Review
 
@@ -111,6 +125,7 @@ Git and the repository platform can retain useful QC evidence, including:
 - Links to issues, specifications, and releases.
 
 The organization should define which records constitute formal QC evidence and how they must be retained.
+QC evidence retained in the repository or its associated pull-request system must not include subject-level identifiers, such as USUBJID values, subject-level clinical values, or other restricted information. When a QC finding requires such details, the information should be documented in an approved, access-controlled QC system. The pull request should contain only a non-sensitive reference or tracking identifier. This requirement also applies to logs, screenshots, comparison results, and other supporting evidence.
 
 ## Conclusion
 
