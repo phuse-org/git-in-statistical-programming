@@ -119,13 +119,14 @@ Git and the repository platform can retain useful QC evidence, including:
 
 - Commit and merge history.
 - Pull-request descriptions.
-- Review comments and responses.
+- Review comments and responses that do not contain subject-level clinical data or other restricted information.
 - Reviewer approvals.
 - Automated test results.
 - Links to issues, specifications, and releases.
 
+QC evidence retained in the repository or its associated pull-request system must not include subject-level identifiers, such as `USUBJID` values, subject-level clinical values, or other restricted information. When a QC finding requires such details, the information should be documented in an approved, access-controlled QC system. The pull request should contain only a non-sensitive reference or tracking identifier. This requirement also applies to logs, screenshots, comparison results, and other supporting evidence.
+
 The organization should define which records constitute formal QC evidence and how they must be retained.
-QC evidence retained in the repository or its associated pull-request system must not include subject-level identifiers, such as USUBJID values, subject-level clinical values, or other restricted information. When a QC finding requires such details, the information should be documented in an approved, access-controlled QC system. The pull request should contain only a non-sensitive reference or tracking identifier. This requirement also applies to logs, screenshots, comparison results, and other supporting evidence.
 
 ## Conclusion
 
