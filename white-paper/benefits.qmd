@@ -48,7 +48,9 @@ As mentionned previously, Git is made to have an history of changes in the code 
 
 ## View of all code & searchability
 
-Even if the folder structure is not the same depending on the sponsor, Git allow to have a clear view of all the code inside a project. Especially when a Git repository is hosted on a platform, and because a Git project should not contain any data. It means that every statistical programmer could have the possibility to view the code of each project. This can be really useful to share and reproduce code, rather than having to request of restricted access to an SCE folder.
+Even if the folder structure is not the same depending on the sponsor, Git allow to have a clear view of all the code inside a project. Especially when a Git repository is hosted on a platform, and because a Git project should not contain any data. It means that every statistical programmer could have the possibility to view the code of each project. This can be really useful to share and reproduce code, rather than having to request a restricted access to an SCE folder.
+
+Additionally to that, working with a Git platform allows to create Git repositories for centralized programming or packages. If a code released on a specific study can indeed be directly used (or adapter) to every studies of a therapeutic area (or more), having this code stored in a general git repository will make code sharing easier.
 
 ::: callout-important
 Not sure to understand what we're talking about here. Anyhow the folders structure depends of each sponsor.
