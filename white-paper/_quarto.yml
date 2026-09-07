@@ -5,6 +5,8 @@ book:
   title: "Git in Statistical Programming"
   author: 
       - "Kieran Martin"
+      - "Alex Assuied"
+      - "Jennifer Winick-Ng"
   date: "5/22/2025"
   chapters:
     - index.qmd
