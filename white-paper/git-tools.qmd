@@ -1,0 +1,145 @@
+# Appendix: Git Tools
+
+## Introduction
+
+Git is the underlying version control system used to track changes and manage
+the history of a project. While Git itself can be used directly through a
+command-line interface, a wide range of tools have been developed to simplify
+repository management, collaboration, code review, and workflow automation.
+The choice of tools will depend on individual preferences, organizational
+requirements, and existing technology ecosystems.
+
+## Git Interfaces
+
+Git can be accessed through either command-line or graphical interfaces.
+
+### Command-Line Interface
+
+The Git command-line interface (CLI) provides access to the full functionality
+of Git and is available on all major operating systems. While it requires
+familiarity with Git commands, it remains the most flexible and universally
+supported option.
+
+Examples include:
+
+- Git Bash (Windows)
+- Terminal (Linux and macOS)
+
+### Graphical Git Clients
+
+Graphical Git clients provide user interfaces for common Git operations such as
+cloning repositories, managing branches, committing changes, and resolving
+merge conflicts.
+
+Examples include:
+
+- GitHub Desktop
+- Sourcetree
+
+These tools can reduce the learning curve for new users while still providing
+access to the most commonly used Git functionality.
+
+## Integrated Development Environment (IDE) Support
+
+Many development environments provide native Git integration, allowing users to
+manage repositories without leaving their coding environment.
+
+Examples include:
+
+- Visual Studio Code
+- RStudio Desktop
+- Posit Workbench
+
+Typical functionality includes viewing modified files, reviewing differences
+between versions, creating commits, and managing branches.
+
+## Repository Hosting Platforms
+
+While Git manages version history locally, repository hosting platforms provide
+centralized locations where teams can store repositories and collaborate.
+
+### GitHub
+
+GitHub is the most widely used Git hosting platform. It provides repository
+hosting together with collaboration features such as pull requests, issue
+tracking, discussions, workflow automation, and integration with AI-assisted
+development tools.
+
+### Azure DevOps
+
+Azure DevOps provides Git repository hosting through Azure Repos and integrates
+with additional services such as Azure Boards and Azure Pipelines. It is
+commonly used in enterprise environments and offers strong integration with the
+Microsoft ecosystem.
+
+### GitLab
+
+GitLab combines repository hosting, code review, and CI/CD capabilities into a
+single platform and is available as both a cloud-hosted and self-hosted
+solution.
+
+Although the features and interfaces differ, all of these platforms are built
+on Git and provide similar capabilities for managing repositories and
+collaborating with teams.
+
+## Collaboration and Work Management
+
+Most repository hosting platforms provide features that support collaborative
+development.
+
+### Pull Requests and Merge Requests
+
+Pull requests (GitHub and Azure DevOps) and merge requests (GitLab) allow
+programmers to propose changes, review modifications, discuss implementation
+details, and approve contributions before they are incorporated into the main
+codebase.
+
+### Issues and Work Item Tracking
+
+Many platforms include features for tracking bugs, enhancement requests,
+documentation tasks, and project activities.
+
+Examples include:
+
+- GitHub Issues
+- Azure Boards
+
+These tools can improve traceability by linking programming work directly to
+requirements, requests, or project objectives.
+
+## Additional Resources
+
+### Git
+
+- Git: <https://git-scm.com/>
+- Git Documentation: <https://git-scm.com/doc>
+
+### Git Interfaces
+
+- Git for Windows (Git Bash): <https://gitforwindows.org/>
+- GitHub Desktop: <https://desktop.github.com/>
+- Sourcetree: <https://www.sourcetreeapp.com/>
+
+### Integrated Development Environments
+
+- Visual Studio Code: <https://code.visualstudio.com/>
+- RStudio Desktop:
+  <https://posit.co/download/rstudio-desktop/>
+- Posit Workbench:
+  <https://posit.co/products/enterprise/workbench/>
+
+### Repository Hosting Platforms
+
+- GitHub: <https://github.com/>
+- Azure DevOps:
+  <https://learn.microsoft.com/en-us/azure/devops/>
+- GitLab: <https://about.gitlab.com/>
+
+## Summary
+
+A wide range of tools are available to support Git-based workflows. Git
+interfaces simplify interaction with repositories, development environments
+integrate Git directly into programming workflows, and hosting platforms provide
+collaboration, review, and project management capabilities. Organizations
+should select the combination of tools that best aligns with their technical
+requirements, governance processes, and ways of working.
