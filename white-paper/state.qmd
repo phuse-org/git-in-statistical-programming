@@ -1,3 +1,42 @@
 # The state of Git usage across the industry
 
-This section will describe the current state of Git in the industry
+This section will describe the current state of Git in the industry. It will discuss some overall trends and look at some individual case studies.
+
+## Astex Pharmaceuticals
+
+Astex Pharmaceuticals have introduced Git into their bioinformatics/statistics department, producing a practical guide for statisticians outlining the five core steps of a Git workflow: cloning a repository via SSH, creating a personal branch, staging and committing changes, pushing to the remote, and merging back to the main branch. 
+
+The guide acknowledges the common points of confusion for new users at each step — including SSH key setup, branch naming conventions, selective staging, amending commits, resolving merge conflicts, and understanding the sequencing of merge, pull, and push operations. 
+
+## Atorus Research
+
+Atorus Research uses Git to support collaborative development of R programs and packages. For R development, Git operations can be performed through the RStudio Git pane or via terminal. Developers begin by pulling the latest changes from the main branch of the remote repository. A new, short-lived branch is then created for a specific enhancement, issue, or programming change, and is linked to the relevant issue or change ticket to maintain traceability.
+
+ The required code changes are developed and tested within the local project. Programmers review the differences before staging, committing, and pushing their changes to the remote repository. A pull request is created to merge the completed changes into the main branch. The main branch is protected, and changes can only be merged through an approved pull request. 
+ 
+ Automated CI/CD checks run on the pull request, and the code is reviewed and approved by someone other than the author. Completed branches are deleted after merging. This workflow provides clear version history, supports collaboration, attributes changes to individual contributors, and allows previous versions to be restored when needed.
+
+
+
+## Novartis
+
+Novartis have been looking to adopt Git as the backbone for version control in their new SCE. To reduce the burden for programmers adopting a environment and Git setup at the same time, much of the flow has been abstracted. They use a Git strategy of release - stage/feature and dev/flfeature + dev/qcfeature.
+
+Only dev branches are unprotected, and first line and QC are separated (where double programming is required) only merging into the protected stage/feature branch, where, after checking for quality, they are merged to main.
+
+This process is controlled via tooling designed to create and manage branches, and making use of Domino's in built Git features which simplify user interaction with Git. The aim is to try to avoid complexities as much as possible, while still gaining the benefits of tracking evidence of quality control via pull requests.
+
+## Roche
+
+As described in the 2024 Phuse Paper @{Martin24}, Roche has integrated Git into their QC Workflow during clinical reporting in their new SCE. Using project management tooling in Gitlab, they use issues to track the SDTM, ADaM and TFL they produce. The issues use tags to indicate QC level. Code repositories exist for each reporting event. There are two permenant branches, main and devel, with main representing production code. As features are developed, feature branches are created, with one per feature: but note that both first line and QC programming happens on the same branch.
+
+## Sanofi
+
+Git adoption is currently in a transitional phase. While Git is not yet routinely used for clinical study deliverables, it has already established a solid foothold in supporting activities: it underpins the development of internal packages used across the SDTM, ADaM, and TFL workflows, and serves as the backbone for technical documentation, maintained through dedicated repositories and associated websites. This existing usage demonstrates a growing familiarity with Git-based workflows within the statistical programming community.
+
+Building on this foundation, a dedicated team is actively preparing the broader transition of clinical studies to Git — addressing key integration points with the company's statistical computing environment, and developing end-user documentation and training materials to support adoption at scale. The year 2026 is set to mark a turning point, with pilot clinical studies expected to be fully integrated with Git, accompanied by a structured change management program to ensure a smooth and sustainable shift across the organization.
+
+## UCB
+
+UCB have adopted Git repositories within Azure DevOps (ADO) for collaborative R package development. Repositories are hosted on Azure Repos, with developers cloning into RStudio and working across main, devel, and feature branches. Commits can be made either through RStudio or directly via the ADO interface. Pull requests are used to merge changes into higher-order branches, with a formal code review process including comments, suggestions, and approvals. A key strength of this approach is that it is easy to identify changes made for specific purposes even when multiple programmers are editing the same program. One noted weakness is that ADO's tooling for resolving merge conflicts is limited, and RStudio is preferred for conflict resolution.
+
