@@ -10,7 +10,6 @@ The scope of this white paper is the practical use of Git in clinical reporting 
 
 - Programming of analysis datasets and tables, listings, and figures (TLFs)
 - Quality control
-- Auditing, traceability, and validation considerations
 - Collaboration between internal teams and external partners
 
 The paper does not aim to be a general Git tutorial or a complete user guide. Many excellent resources already exist to learn Git from first principles; where appropriate, we will reference selected materials rather than reproduce them.

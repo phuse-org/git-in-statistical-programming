@@ -17,7 +17,6 @@ book:
         - recommendations.qmd
         - branching-strategies.qmd
         - qcintegration.qmd
-    - audittrail.qmd
     - summary.qmd
     - references.qmd
   appendices:
