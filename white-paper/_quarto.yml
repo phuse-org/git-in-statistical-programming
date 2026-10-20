@@ -3,8 +3,9 @@ project:
   output-dir: ../docs/white-paper
 book:
   title: "Git in Statistical Programming"
-  author: 
-      - "Kieran Martin"
+  author:
+    - "Kieran Martin"
+    - "Pallabini Dash"
   date: "5/22/2025"
   chapters:
     - index.qmd
@@ -15,8 +16,8 @@ book:
       chapters:
         - recommendations.qmd
         - branching-strategies.qmd
+        - qcintegration.qmd
     - audittrail.qmd
-    - qcintegration.qmd
     - summary.qmd
     - references.qmd
   appendices:
@@ -32,6 +33,4 @@ format:
       body-width: 900px
       margin-width: 200px
       gutter-width: 0.5rem
-
-
-
+      
