@@ -10,22 +10,37 @@ Git is much more than a version control system. In clinical development, it can 
 flowchart TD
     git["Git"]
 
-    ai["AI-assisted<br/>code changes"]
-    sec["Security<br/>scanning"]
-    cicd["CI/CD<br/>automation"]
-    hist["Commit<br/>history"]
-    view["Shared code<br/>&amp; searchability"]
+    trace["Traceability"]
+    collab["Collaboration"]
+    auto["Automation"]
 
-    git --> ai
-    git --> sec
-    git --> cicd
-    git --> hist
-    git --> view
+    audit["Audit trail"]
+    review["Change review"]
+    compliance["Compliance"]
 
-    ai -->|"reviewed via diff / log"| trust["Confidence in<br/>AI-driven changes"]
-    cicd -->|"no manual batch runs"| efficiency["Time saved"]
-    hist -->|"traceability over time"| understanding["Team understands<br/>code evolution"]
-    view -->|"no restricted access request"| collab["Easier sharing<br/>&amp; reproducibility"]
+    share["Easier sharing"]
+    repro["Reproducibility"]
+    knowledge["Knowledge retention"]
+
+    cicd["CI/CD"]
+    security["Security scanning"]
+    ai["AI-assisted coding"]
+
+    git --> trace
+    git --> collab
+    git --> auto
+
+    trace --> audit
+    trace --> review
+    trace --> compliance
+
+    collab --> share
+    collab --> repro
+    collab --> knowledge
+
+    auto --> cicd
+    auto --> security
+    auto --> ai
 ```
 
 ## How AI can be used with Git
