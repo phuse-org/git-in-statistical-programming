@@ -1,3 +1,18 @@
-# Summary
+# Conclusion
 
-In summary, this book has no content whatsoever.
+Git is the de facto standard for version control in software engineering, but its adoption in regulated clinical reporting is still at an early stage. This white paper looked at how Git and Git-based platforms such as GitHub, GitLab, and Azure DevOps can be used effectively and responsibly in clinical reporting, for quality control, and for collaboration. We believe adoption can be a net positive for organisations that are willing to invest in the processes, controls, and support needed to use it well.
+
+The experience of the companies described in this paper shows that there is no single path to adoption. Organisations are at different stages, operate under different infrastructure and regulatory interpretations, and have made different choices about how much of Git's complexity to show their users. Even so, a common pattern is emerging: short-lived branches, protected main branches, pull requests with independent review, and links to issues for traceability. This suggests that the industry is converging on shared good practice, even where the details differ.
+
+The main challenge is not technical. Git itself is mature, well documented, and widely supported. What decides whether adoption succeeds is how well organisations manage the change for their people. Programmers who are used to shared drives and manual versioning need time, practical training, and clear documentation that fits their day-to-day work. They also need regular reminders of why the change is worthwhile. Organisations that listen to feedback and adapt their approach are more likely to see Git become a routine part of the workflow rather than a burden.
+
+Git also does not remove the need for sound process design. Choosing a branching strategy, defining how pull requests fit into QC, and deciding what counts as formal QC evidence all have to be decided deliberately for the type of work and the regulatory context. Git should support existing quality frameworks rather than replace them. Independent validation, controlled specifications, and appropriate protection of restricted data remain essential.
+
+Done well, Git brings clear benefits to statistical programming:
+
+- A transparent and complete history of changes.
+- Structured, line-by-line peer review.
+- Better traceability between requirements, code, and outputs.
+- A foundation for automation and AI-assisted review.
+
+As more organisations gain experience, tools mature, and regulatory expectations become clearer, we expect these practices to continue to evolve. We encourage organisations to share what they learn so that the industry can keep refining how Git is used in statistical programming.
