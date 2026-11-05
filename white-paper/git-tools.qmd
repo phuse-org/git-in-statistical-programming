@@ -35,6 +35,8 @@ Examples include:
 
 - GitHub Desktop
 - Sourcetree
+- GitKraken
+- TortoiseGit
 
 These tools can reduce the learning curve for new users while still providing
 access to the most commonly used Git functionality.
