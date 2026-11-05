@@ -81,6 +81,10 @@ GitLab combines repository hosting, code review, and CI/CD capabilities into a
 single platform and is available as both a cloud-hosted and self-hosted
 solution.
 
+### Bitbucket
+
+Bitbucket is a Git repository hosting and collaboration platform from Atlassian. It provides tools for managing source code, reviewing changes, and coordinating development workflows, with particularly close integration with Jira and other Atlassian products.
+
 Although the features and interfaces differ, all of these platforms support Git repositories
 and provide similar capabilities for managing repositories and
 collaborating with teams.
