@@ -78,7 +78,7 @@ GitLab combines repository hosting, code review, and CI/CD capabilities into a
 single platform and is available as both a cloud-hosted and self-hosted
 solution.
 
-Although the features and interfaces differ, all of these platforms are built
+Although the features and interfaces differ, all of these platforms support Git repositories
 on Git and provide similar capabilities for managing repositories and
 collaborating with teams.
 
