@@ -50,7 +50,8 @@ Examples include:
 
 - Visual Studio Code
 - RStudio Desktop
-- Posit Workbench
+- Positron
+- JupyterLab
 
 Typical functionality includes viewing modified files, reviewing differences
 between versions, creating commits, and managing branches.
