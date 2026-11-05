@@ -137,6 +137,7 @@ requirements, requests, or project objectives.
 - Azure DevOps:
   <https://learn.microsoft.com/en-us/azure/devops/>
 - GitLab: <https://about.gitlab.com/>
+- Bitbucket: <https://bitbucket.org/>
 
 ## Summary
 
