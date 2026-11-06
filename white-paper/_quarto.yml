@@ -4,8 +4,9 @@ project:
 book:
   title: "Git in Statistical Programming"
   author: 
-      - "Kieran Martin"
       - "Alex Assuied"
+      - "Pallabini Dash"
+      - "Kieran Martin"
       - "Jennifer Winick-Ng"
   date: "5/22/2025"
   chapters:
@@ -17,8 +18,7 @@ book:
       chapters:
         - recommendations.qmd
         - branching-strategies.qmd
-    - audittrail.qmd
-    - qcintegration.qmd
+        - qcintegration.qmd
     - summary.qmd
     - references.qmd
   appendices:
@@ -34,6 +34,4 @@ format:
       body-width: 900px
       margin-width: 200px
       gutter-width: 0.5rem
-
-
-
+      
