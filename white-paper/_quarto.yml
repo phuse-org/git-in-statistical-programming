@@ -4,7 +4,9 @@ project:
 book:
   title: "Git in Statistical Programming"
   author: 
-      - "Kieran Martin"
+    - "Kieran Martin"
+    - "Pallabini Dash"
+    - "Alex Assuied"
   date: "5/22/2025"
   chapters:
     - index.qmd
