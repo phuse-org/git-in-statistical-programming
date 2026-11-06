@@ -3,9 +3,11 @@ project:
   output-dir: ../docs/white-paper
 book:
   title: "Git in Statistical Programming"
-  author:
-    - "Kieran Martin"
-    - "Pallabini Dash"
+  author: 
+      - "Alex Assuied"
+      - "Pallabini Dash"
+      - "Kieran Martin"
+      - "Jennifer Winick-Ng"
   date: "5/22/2025"
   chapters:
     - index.qmd
